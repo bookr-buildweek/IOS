@@ -65,9 +65,12 @@
                                 <rect key="frame" x="20" y="564" width="374" height="36"/>
                                 <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="SIGN IN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="s6f-xd-evx" kind="presentation" id="R5A-bz-x3h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhK-JG-QRx">
                                 <rect key="frame" x="90" y="509" width="234" height="34"/>
@@ -114,6 +117,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="157" y="127"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="sz6-hE-z6u">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="s6f-xd-evx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SVU-PB-sFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="446"/>
         </scene>
         <!--Create Account-->
         <scene sceneID="4dq-1n-Eaa">
@@ -178,9 +189,12 @@
                                 <rect key="frame" x="20" y="606.5" width="374" height="35.5"/>
                                 <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="CREATE ACCOUNT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="s6f-xd-evx" kind="presentation" id="joj-wI-wsC"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WHQ-Mm-ocP">
                                 <rect key="frame" x="214" y="279" width="180" height="30"/>
@@ -268,4 +282,7 @@
             <point key="canvasLocation" x="157" y="822"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="joj-wI-wsC"/>
+    </inferredMetricsTieBreakers>
 </document>
