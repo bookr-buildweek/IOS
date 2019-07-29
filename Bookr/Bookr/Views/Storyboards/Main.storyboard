@@ -19,8 +19,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oxn-Nh-7uc">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IfZ-Bv-MbW">
+                                        <rect key="frame" x="20" y="201.5" width="374" height="301.5"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2K-zy-cDg">
+                                        <rect key="frame" x="20" y="533" width="374" height="33"/>
+                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <state key="normal" title="GET STARTED">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pcH-bE-jqi">
+                                        <rect key="frame" x="20" y="119" width="374" height="52.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOKR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBh-BM-oh6">
+                                                <rect key="frame" x="0.0" y="0.0" width="71" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your source for all things textbook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaq-KA-fGz">
+                                                <rect key="frame" x="0.0" y="32" width="261.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="H2K-zy-cDg" secondAttribute="bottom" constant="159" id="0uN-ZI-kWI"/>
+                                    <constraint firstItem="H2K-zy-cDg" firstAttribute="leading" secondItem="oxn-Nh-7uc" secondAttribute="leading" constant="20" id="Koo-Pc-xdD"/>
+                                    <constraint firstItem="IfZ-Bv-MbW" firstAttribute="leading" secondItem="oxn-Nh-7uc" secondAttribute="leading" constant="20" id="Nu5-ef-a4u"/>
+                                    <constraint firstAttribute="trailing" secondItem="H2K-zy-cDg" secondAttribute="trailing" constant="20" id="OTs-Ze-g8y"/>
+                                    <constraint firstItem="pcH-bE-jqi" firstAttribute="leading" secondItem="oxn-Nh-7uc" secondAttribute="leading" constant="20" id="P6G-29-64x"/>
+                                    <constraint firstItem="H2K-zy-cDg" firstAttribute="top" secondItem="IfZ-Bv-MbW" secondAttribute="bottom" constant="30" id="S6R-2J-ysU"/>
+                                    <constraint firstAttribute="trailing" secondItem="pcH-bE-jqi" secondAttribute="trailing" constant="20" id="aOm-J3-iAU"/>
+                                    <constraint firstAttribute="trailing" secondItem="IfZ-Bv-MbW" secondAttribute="trailing" constant="20" id="g1v-yk-SUp"/>
+                                    <constraint firstItem="pcH-bE-jqi" firstAttribute="top" secondItem="oxn-Nh-7uc" secondAttribute="top" constant="119" id="tPO-xQ-sjF"/>
+                                    <constraint firstItem="IfZ-Bv-MbW" firstAttribute="top" secondItem="pcH-bE-jqi" secondAttribute="bottom" constant="30" id="y8D-hB-0kp"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,11 +75,13 @@
                         <viewLayoutGuide key="safeArea" id="LYg-UR-87P"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ylo-WW-pgU">
+                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="mHd-59-6DZ"/>
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="0dg-7H-e9N"/>
-                            <barButtonItem title="Item" id="zg6-g1-o5X"/>
+                            <barButtonItem title="JOIN" id="0dg-7H-e9N"/>
+                            <barButtonItem title="LOGIN" id="zg6-g1-o5X"/>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hun-8i-sNE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
