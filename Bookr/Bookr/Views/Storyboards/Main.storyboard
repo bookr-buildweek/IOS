@@ -78,7 +78,13 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="mHd-59-6DZ"/>
                         <rightBarButtonItems>
                             <barButtonItem title="JOIN" id="0dg-7H-e9N"/>
-                            <barButtonItem title="LOGIN" id="zg6-g1-o5X"/>
+                            <barButtonItem title="LOGIN" id="zg6-g1-o5X">
+                                <connections>
+                                    <segue destination="ssA-Vu-IlJ" kind="popoverPresentation" popoverAnchorBarButtonItem="zg6-g1-o5X" id="eRu-8b-CJk">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -86,6 +92,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hun-8i-sNE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="D1G-OT-lCt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="ssA-Vu-IlJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SN5-UH-stB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="-93"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ke5-T0-tpe">
