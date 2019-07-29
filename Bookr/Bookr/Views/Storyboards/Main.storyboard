@@ -32,7 +32,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LYg-UR-87P"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ylo-WW-pgU"/>
+                    <navigationItem key="navigationItem" id="Ylo-WW-pgU">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" id="0dg-7H-e9N"/>
+                            <barButtonItem title="Item" id="zg6-g1-o5X"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hun-8i-sNE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
