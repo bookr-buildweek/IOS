@@ -16,7 +16,6 @@
 		F5FB775A22EFA04C0097D572 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB775922EFA04C0097D572 /* Book.swift */; };
 		F5FB775C22EFB2190097D572 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB775B22EFB2190097D572 /* HomePageViewController.swift */; };
 		F5FB775E22EFB2B60097D572 /* HomePageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB775D22EFB2B60097D572 /* HomePageCollectionViewController.swift */; };
-		F5FB776022EFE4D20097D572 /* BookResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB775F22EFE4D20097D572 /* BookResultsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		F5FB775922EFA04C0097D572 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = SOURCE_ROOT; };
 		F5FB775B22EFB2190097D572 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = SOURCE_ROOT; };
 		F5FB775D22EFB2B60097D572 /* HomePageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
-		F5FB775F22EFE4D20097D572 /* BookResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BookResultsTableViewController.swift; path = Bookr/BookResultsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +86,6 @@
 			children = (
 				F5FB775B22EFB2190097D572 /* HomePageViewController.swift */,
 				F5FB775D22EFB2B60097D572 /* HomePageCollectionViewController.swift */,
-				F5FB775F22EFE4D20097D572 /* BookResultsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,7 +181,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5FB776022EFE4D20097D572 /* BookResultsTableViewController.swift in Sources */,
 				F5FB775A22EFA04C0097D572 /* Book.swift in Sources */,
 				B506A50C22EF58A500061FCF /* AppDelegate.swift in Sources */,
 				F5FB775E22EFB2B60097D572 /* HomePageCollectionViewController.swift in Sources */,
