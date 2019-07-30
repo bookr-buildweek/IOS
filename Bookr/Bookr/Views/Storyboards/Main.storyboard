@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Hero Page View Controller-->
         <scene sceneID="heT-dw-tVp">
             <objects>
-                <viewController id="mvU-AJ-pfN" sceneMemberID="viewController">
+                <viewController id="mvU-AJ-pfN" customClass="HeroPageViewController" customModule="Bookr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="74e-mf-6rm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,11 +21,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oxn-Nh-7uc">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IfZ-Bv-MbW">
-                                        <rect key="frame" x="20" y="201.5" width="374" height="301.5"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="IfZ-Bv-MbW">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <color key="backgroundColor" red="0.39721024036407471" green="0.36899083852767944" blue="0.078997008502483368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2K-zy-cDg">
-                                        <rect key="frame" x="20" y="533" width="374" height="33"/>
+                                        <rect key="frame" x="20" y="437" width="374" height="33"/>
                                         <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <state key="normal" title="GET STARTED">
@@ -37,18 +38,18 @@
                                             </segue>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pcH-bE-jqi">
-                                        <rect key="frame" x="20" y="119" width="374" height="52.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="pcH-bE-jqi">
+                                        <rect key="frame" x="20" y="212" width="374" height="96"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOKR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBh-BM-oh6">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="24"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your source for all things textbook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaq-KA-fGz">
-                                                <rect key="frame" x="0.0" y="32" width="261.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="66" width="371" height="30"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -57,16 +58,16 @@
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="H2K-zy-cDg" secondAttribute="bottom" constant="159" id="0uN-ZI-kWI"/>
-                                    <constraint firstItem="H2K-zy-cDg" firstAttribute="leading" secondItem="oxn-Nh-7uc" secondAttribute="leading" constant="20" id="Koo-Pc-xdD"/>
-                                    <constraint firstItem="IfZ-Bv-MbW" firstAttribute="leading" secondItem="oxn-Nh-7uc" secondAttribute="leading" constant="20" id="Nu5-ef-a4u"/>
-                                    <constraint firstAttribute="trailing" secondItem="H2K-zy-cDg" secondAttribute="trailing" constant="20" id="OTs-Ze-g8y"/>
-                                    <constraint firstItem="pcH-bE-jqi" firstAttribute="leading" secondItem="oxn-Nh-7uc" secondAttribute="leading" constant="20" id="P6G-29-64x"/>
-                                    <constraint firstItem="H2K-zy-cDg" firstAttribute="top" secondItem="IfZ-Bv-MbW" secondAttribute="bottom" constant="30" id="S6R-2J-ysU"/>
-                                    <constraint firstAttribute="trailing" secondItem="pcH-bE-jqi" secondAttribute="trailing" constant="20" id="aOm-J3-iAU"/>
-                                    <constraint firstAttribute="trailing" secondItem="IfZ-Bv-MbW" secondAttribute="trailing" constant="20" id="g1v-yk-SUp"/>
-                                    <constraint firstItem="pcH-bE-jqi" firstAttribute="top" secondItem="oxn-Nh-7uc" secondAttribute="top" constant="119" id="tPO-xQ-sjF"/>
-                                    <constraint firstItem="IfZ-Bv-MbW" firstAttribute="top" secondItem="pcH-bE-jqi" secondAttribute="bottom" constant="30" id="y8D-hB-0kp"/>
+                                    <constraint firstItem="IfZ-Bv-MbW" firstAttribute="leading" secondItem="oxn-Nh-7uc" secondAttribute="leading" id="Fg1-Ok-XSu"/>
+                                    <constraint firstItem="IfZ-Bv-MbW" firstAttribute="top" secondItem="oxn-Nh-7uc" secondAttribute="top" id="H2p-jg-hNf"/>
+                                    <constraint firstItem="H2K-zy-cDg" firstAttribute="leading" secondItem="oxn-Nh-7uc" secondAttribute="leading" constant="20" id="Lwh-43-s6U"/>
+                                    <constraint firstItem="pcH-bE-jqi" firstAttribute="top" secondItem="oxn-Nh-7uc" secondAttribute="top" constant="212" id="NCK-US-fxh"/>
+                                    <constraint firstAttribute="bottom" secondItem="IfZ-Bv-MbW" secondAttribute="bottom" id="Vdu-2G-6T3"/>
+                                    <constraint firstAttribute="trailing" secondItem="H2K-zy-cDg" secondAttribute="trailing" constant="20" id="jOh-wf-lXS"/>
+                                    <constraint firstAttribute="trailing" secondItem="pcH-bE-jqi" secondAttribute="trailing" constant="20" id="n71-5M-WiZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="IfZ-Bv-MbW" secondAttribute="trailing" id="uh9-Go-sau"/>
+                                    <constraint firstItem="pcH-bE-jqi" firstAttribute="leading" secondItem="oxn-Nh-7uc" secondAttribute="leading" constant="20" id="yCC-g6-QaO"/>
+                                    <constraint firstItem="H2K-zy-cDg" firstAttribute="top" secondItem="pcH-bE-jqi" secondAttribute="bottom" constant="129" id="yyx-xL-3Yl"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -80,7 +81,7 @@
                         <viewLayoutGuide key="safeArea" id="LYg-UR-87P"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ylo-WW-pgU">
-                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="mHd-59-6DZ"/>
+                        <barButtonItem key="leftBarButtonItem" image="Image-9" id="mHd-59-6DZ"/>
                         <barButtonItem key="rightBarButtonItem" title="LOGIN" id="zg6-g1-o5X">
                             <connections>
                                 <segue destination="ssA-Vu-IlJ" kind="popoverPresentation" popoverAnchorBarButtonItem="zg6-g1-o5X" id="eRu-8b-CJk">
@@ -122,6 +123,10 @@
             <point key="canvasLocation" x="91" y="127"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="360" height="254"/>
+        <image name="Image-9" width="61" height="55"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eRu-8b-CJk"/>
     </inferredMetricsTieBreakers>

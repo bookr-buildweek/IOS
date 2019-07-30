@@ -8,13 +8,13 @@
 
 import UIKit
 
-struct Book {
+struct Book: Equatable, Codable {
 	
 	var title: String
-	var description: String
 	var author: String
 	var company: String
-	var image: UIImage
 	var rating: Double
 	
+	//	var description: String
+//	var image: UIImage
 }
