@@ -9,7 +9,7 @@
 import Foundation
 
 enum BookrRouter {
-	case register(request: User)
+	case register(request: RegisterRequest)
 	case login(request: LoginRequest)
 	case getUserBy(id: Int)
 	case getBooks
@@ -76,6 +76,13 @@ extension BookrRouter: EndPointType {
 		switch self {
 		case .login(let data):
 			return .requestParameters(bodyParameters: ["email":data.email, "password":data.password], urlParameters: nil)
+		case .register(let data):
+			return .requestParameters(bodyParameters: [
+										"first_name":data.firstName,
+										"last_name":data.lastName,
+										"email":data.email,
+										"password":data.password
+										], urlParameters: nil)
 		default:
 			return .request
 		}

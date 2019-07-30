@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB3E57B26651F15589B67FC5 /* Pods_Bookr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A249F808167594ECD98EAE /* Pods_Bookr.framework */; };
 		B506A50C22EF58A500061FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506A50B22EF58A500061FCF /* AppDelegate.swift */; };
 		B506A51322EF58A500061FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B506A51222EF58A500061FCF /* Assets.xcassets */; };
 		B506A51622EF58A500061FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B506A51422EF58A500061FCF /* LaunchScreen.storyboard */; };
@@ -28,9 +29,16 @@
 		B5FE507022EFBC1100EB6C6D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE506F22EFBC1100EB6C6D /* Login.swift */; };
 		B5FE507222EFC15E00EB6C6D /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507122EFC15E00EB6C6D /* TestVC.swift */; };
 		B5FE507422EFC74700EB6C6D /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507322EFC74700EB6C6D /* LoginRequest.swift */; };
+		B5FE507622F0774300EB6C6D /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507522F0774300EB6C6D /* RegisterRequest.swift */; };
+		B5FE507822F0783C00EB6C6D /* UserAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507722F0783C00EB6C6D /* UserAPIManager.swift */; };
+		B5FE507A22F0A6F100EB6C6D /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507922F0A6F100EB6C6D /* Review.swift */; };
+		B5FE507C22F0AA0500EB6C6D /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507B22F0AA0500EB6C6D /* SettingsController.swift */; };
+		B5FE507E22F0BAE900EB6C6D /* AccessKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507D22F0BAE900EB6C6D /* AccessKeys.swift */; };
+		B5FE508022F0E26500EB6C6D /* BookAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507F22F0E26500EB6C6D /* BookAPIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6820DCA7B6B912842EFF3C43 /* Pods-Bookr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bookr/Pods-Bookr.debug.xcconfig"; sourceTree = "<group>"; };
 		B506A50822EF58A500061FCF /* Bookr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B506A50B22EF58A500061FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B506A51222EF58A500061FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +62,14 @@
 		B5FE506F22EFBC1100EB6C6D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		B5FE507122EFC15E00EB6C6D /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		B5FE507322EFC74700EB6C6D /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		B5FE507522F0774300EB6C6D /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		B5FE507722F0783C00EB6C6D /* UserAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIManager.swift; sourceTree = "<group>"; };
+		B5FE507922F0A6F100EB6C6D /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		B5FE507B22F0AA0500EB6C6D /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		B5FE507D22F0BAE900EB6C6D /* AccessKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessKeys.swift; sourceTree = "<group>"; };
+		B5FE507F22F0E26500EB6C6D /* BookAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAPIManager.swift; sourceTree = "<group>"; };
+		C0A249F808167594ECD98EAE /* Pods_Bookr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20A1D4ACE7271809E510BE5 /* Pods-Bookr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bookr/Pods-Bookr.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +77,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3E57B26651F15589B67FC5 /* Pods_Bookr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A522E4489B728F50D12DC746 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6820DCA7B6B912842EFF3C43 /* Pods-Bookr.debug.xcconfig */,
+				E20A1D4ACE7271809E510BE5 /* Pods-Bookr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B506A4FF22EF58A500061FCF = {
 			isa = PBXGroup;
 			children = (
 				B506A50A22EF58A500061FCF /* Bookr */,
 				B506A50922EF58A500061FCF /* Products */,
+				A522E4489B728F50D12DC746 /* Pods */,
+				ED90B47687F4E21236332C73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +122,7 @@
 				B506A51222EF58A500061FCF /* Assets.xcassets */,
 				B506A51422EF58A500061FCF /* LaunchScreen.storyboard */,
 				B506A51722EF58A500061FCF /* Info.plist */,
+				B5FE507D22F0BAE900EB6C6D /* AccessKeys.swift */,
 			);
 			path = Bookr;
 			sourceTree = "<group>";
@@ -104,6 +133,8 @@
 				B5FE506B22EFAF8200EB6C6D /* User.swift */,
 				B5FE506F22EFBC1100EB6C6D /* Login.swift */,
 				B5FE507322EFC74700EB6C6D /* LoginRequest.swift */,
+				B5FE507522F0774300EB6C6D /* RegisterRequest.swift */,
+				B5FE507922F0A6F100EB6C6D /* Review.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -112,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				B5FE507122EFC15E00EB6C6D /* TestVC.swift */,
+				B5FE507B22F0AA0500EB6C6D /* SettingsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				B5FE506D22EFB62000EB6C6D /* NetworkManager.swift */,
+				B5FE507722F0783C00EB6C6D /* UserAPIManager.swift */,
+				B5FE507F22F0E26500EB6C6D /* BookAPIManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -184,6 +218,14 @@
 			path = Endpoint;
 			sourceTree = "<group>";
 		};
+		ED90B47687F4E21236332C73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0A249F808167594ECD98EAE /* Pods_Bookr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B506A51A22EF58A500061FCF /* Build configuration list for PBXNativeTarget "Bookr" */;
 			buildPhases = (
+				36BA68A8EDAB00F46831F148 /* [CP] Check Pods Manifest.lock */,
 				B506A50422EF58A500061FCF /* Sources */,
 				B506A50522EF58A500061FCF /* Frameworks */,
 				B506A50622EF58A500061FCF /* Resources */,
+				B6DB6C72E246D2AE18A439D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +296,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36BA68A8EDAB00F46831F148 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bookr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6DB6C72E246D2AE18A439D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bookr/Pods-Bookr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bookr/Pods-Bookr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B506A50422EF58A500061FCF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,6 +343,7 @@
 				B506A54A22EF689E00061FCF /* JSONParameterEncoder.swift in Sources */,
 				B5FE506A22EF883700EB6C6D /* BookrRouter.swift in Sources */,
 				B506A54222EF621A00061FCF /* HTTPTask.swift in Sources */,
+				B5FE508022F0E26500EB6C6D /* BookAPIManager.swift in Sources */,
 				B5FE506E22EFB62000EB6C6D /* NetworkManager.swift in Sources */,
 				B5FE506822EF7EB100EB6C6D /* Router.swift in Sources */,
 				B506A50C22EF58A500061FCF /* AppDelegate.swift in Sources */,
@@ -269,8 +353,13 @@
 				B506A54822EF658300061FCF /* URLParameterEncoder.swift in Sources */,
 				B5FE507222EFC15E00EB6C6D /* TestVC.swift in Sources */,
 				B5FE506C22EFAF8200EB6C6D /* User.swift in Sources */,
+				B5FE507E22F0BAE900EB6C6D /* AccessKeys.swift in Sources */,
+				B5FE507622F0774300EB6C6D /* RegisterRequest.swift in Sources */,
 				B506A53A22EF60BD00061FCF /* EndPointType.swift in Sources */,
+				B5FE507A22F0A6F100EB6C6D /* Review.swift in Sources */,
 				B506A54022EF619D00061FCF /* HTTPMethod.swift in Sources */,
+				B5FE507C22F0AA0500EB6C6D /* SettingsController.swift in Sources */,
+				B5FE507822F0783C00EB6C6D /* UserAPIManager.swift in Sources */,
 				B5FE506622EF69D400EB6C6D /* NetworkRouter.swift in Sources */,
 				B5FE507422EFC74700EB6C6D /* LoginRequest.swift in Sources */,
 			);
@@ -408,6 +497,7 @@
 		};
 		B506A51B22EF58A500061FCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6820DCA7B6B912842EFF3C43 /* Pods-Bookr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -426,6 +516,7 @@
 		};
 		B506A51C22EF58A500061FCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20A1D4ACE7271809E510BE5 /* Pods-Bookr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
