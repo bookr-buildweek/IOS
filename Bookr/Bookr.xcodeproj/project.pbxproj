@@ -13,6 +13,10 @@
 		B506A53522EF5D5800061FCF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B506A53122EF5D5800061FCF /* Profile.storyboard */; };
 		B506A53622EF5D5800061FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B506A53222EF5D5800061FCF /* Main.storyboard */; };
 		B506A53722EF5D5800061FCF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B506A53322EF5D5800061FCF /* Login.storyboard */; };
+		F5FB775A22EFA04C0097D572 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB775922EFA04C0097D572 /* Book.swift */; };
+		F5FB775C22EFB2190097D572 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB775B22EFB2190097D572 /* HomePageViewController.swift */; };
+		F5FB775E22EFB2B60097D572 /* HomePageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB775D22EFB2B60097D572 /* HomePageCollectionViewController.swift */; };
+		F5FB776022EFE4D20097D572 /* BookResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB775F22EFE4D20097D572 /* BookResultsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B506A53122EF5D5800061FCF /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B506A53222EF5D5800061FCF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B506A53322EF5D5800061FCF /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F5FB775922EFA04C0097D572 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = SOURCE_ROOT; };
+		F5FB775B22EFB2190097D572 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = SOURCE_ROOT; };
+		F5FB775D22EFB2B60097D572 /* HomePageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
+		F5FB775F22EFE4D20097D572 /* BookResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BookResultsTableViewController.swift; path = Bookr/BookResultsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 		B506A52C22EF5D5800061FCF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F5FB775922EFA04C0097D572 /* Book.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -77,6 +86,9 @@
 		B506A52D22EF5D5800061FCF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F5FB775B22EFB2190097D572 /* HomePageViewController.swift */,
+				F5FB775D22EFB2B60097D572 /* HomePageCollectionViewController.swift */,
+				F5FB775F22EFE4D20097D572 /* BookResultsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,7 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5FB776022EFE4D20097D572 /* BookResultsTableViewController.swift in Sources */,
+				F5FB775A22EFA04C0097D572 /* Book.swift in Sources */,
 				B506A50C22EF58A500061FCF /* AppDelegate.swift in Sources */,
+				F5FB775E22EFB2B60097D572 /* HomePageCollectionViewController.swift in Sources */,
+				F5FB775C22EFB2190097D572 /* HomePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
