@@ -37,7 +37,7 @@ struct NetworkManager {
 		}
 	}
 	
-	func getResponse<T: Codable>(_ data: Data?, _ response: URLResponse?, _ error: Error?,_ returnType: T.Type?) -> (T?, String?) {
+	func getObject<T: Codable>(_ data: Data?, _ response: URLResponse?, _ error: Error?,_ returnType: T.Type) -> (T?, String?) {
 		if error != nil {
 			return (nil, "Please check your network connection.")
 		}
@@ -50,15 +50,41 @@ struct NetworkManager {
 					return (nil, NetworkResponse.noData.rawValue)
 				}
 				
-				if let returnType = returnType {
-					do {
-						let decoder = JSONDecoder()
-						decoder.keyDecodingStrategy = .convertFromSnakeCase
-						let apiResponse = try decoder.decode(returnType, from: responseData)
-						return (apiResponse, nil)
-					} catch {
-						return (nil, NetworkResponse.unableToDecode.rawValue)
-					}
+				do {
+					let decoder = JSONDecoder()
+					decoder.keyDecodingStrategy = .convertFromSnakeCase
+					let apiResponse = try decoder.decode(returnType, from: responseData)
+					return (apiResponse, nil)
+				} catch {
+					return (nil, NetworkResponse.unableToDecode.rawValue)
+				}
+			case .failure(let networkFailureError):
+				return (nil, networkFailureError)
+			}
+		}
+		return (nil, NetworkResponse.failed.rawValue)
+	}
+	
+	func getArray<T: Codable>(_ data: Data?, _ response: URLResponse?, _ error: Error?,_ returnType: T.Type) -> ([T]?, String?) {
+		if error != nil {
+			return (nil, "Please check your network connection.")
+		}
+		
+		if let response = response as? HTTPURLResponse {
+			let result = self.handleNetworkResponse(response)
+			switch result {
+			case .success:
+				guard let responseData = data else {
+					return (nil, NetworkResponse.noData.rawValue)
+				}
+				
+				do {
+					let decoder = JSONDecoder()
+					decoder.keyDecodingStrategy = .convertFromSnakeCase
+					let apiResponse = try decoder.decode([T].self, from: responseData)
+					return (apiResponse, nil)
+				} catch {
+					return (nil, NetworkResponse.unableToDecode.rawValue)
 				}
 			case .failure(let networkFailureError):
 				return (nil, networkFailureError)

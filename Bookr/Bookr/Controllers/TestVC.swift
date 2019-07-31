@@ -66,31 +66,79 @@ class TestVC: UIViewController {
 	}
 	
 	@IBAction func allBooks(_ sender: Any) {
-		networkManager
+		networkManager.getAllBooks { (books, error) in
+			if let error = error {
+				print(error)
+			}
+			if let books = books {
+				print(books)
+			}
+		}
 	}
 	
 	@IBAction func getBook(_ sender: Any) {
-		
+		networkManager.getBookBy(id: 1) { (book, error) in
+			if let error = error {
+				print(error)
+			}
+			if let book = book {
+				print(book)
+			}
+		}
 	}
 	
 	@IBAction func userReviews(_ sender: Any) {
-		
+		networkManager.getUserReviewsBy(userId: 4) { (reviews, error) in
+			if let error = error {
+				print(error)
+			}
+			if let reviews = reviews {
+				print(reviews)
+			}
+		}
 	}
 	
 	@IBAction func getReview(_ sender: Any) {
-		
+		networkManager.getReviewBy(id: 1) { (review, error) in
+			if let error = error {
+				print(error)
+			}
+			if let review = review {
+				print(review)
+			}
+		}
 	}
 	
 	@IBAction func postReview(_ sender: Any) {
-		
-		
+		networkManager.post(review: ReviewRequest(bookId: 1, review: "Thought it was aight", userId: 4, ratings: 3)) { (review, error) in
+			if let error = error {
+				print(error)
+			}
+			if let review = review {
+				print(review)
+			}
+		}
 	}
 	
 	@IBAction func editReview(_ sender: Any) {
-		
+		networkManager.editReview(data: ReviewRequest(bookId: 1, review: "Thought it was great!", userId: 4, ratings: 5)) { (review, error) in
+			if let error = error {
+				print(error)
+			}
+			if let review = review {
+				print(review)
+			}
+		}
 	}
 	
 	@IBAction func deleteReview(_ sender: Any) {
-		
+		networkManager.post(review: ReviewRequest(bookId: 1, review: "Thought it was aight", userId: 4, ratings: 3)) { (review, error) in
+			if let error = error {
+				print(error)
+			}
+			if let review = review {
+				print(review)
+			}
+		}
 	}
 }

@@ -37,6 +37,7 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
 			switch route.task {
 			case .request:
 				request.setValue("aplication/json", forHTTPHeaderField: "Content-Type")
+				request.setValue(SettingsController().userToken, forHTTPHeaderField: "Authorization")
 			case .requestParameters(let bodyParameters, let urlParameters):
 				try configureParameters(bodyParameters: bodyParameters, urlParameters: urlParameters, request: &request)
 			case .requestParametersAndHeaders(let bodyParameters, let urlParameters, let additionalHeaders):

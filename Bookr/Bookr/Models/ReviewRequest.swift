@@ -1,5 +1,5 @@
 //
-//  Review.swift
+//  ReviewRequest.swift
 //  Bookr
 //
 //  Created by Jeffrey Santana on 7/30/19.
@@ -8,18 +8,16 @@
 
 import Foundation
 
-struct Review: Codable {
-	let id: Int
+struct ReviewRequest: Codable {
+	let bookId: Int
+	let review: String
 	let userId: Int
 	let ratings: Int
-	let review: String
-	let bookId: Int
 	
 	enum CodingKeys: String, CodingKey {
-		case id
-		case userId = "reviewer"
-		case ratings
+		case bookId = "bookId"
 		case review
-		case bookId
+		case ratings
+		case userId = "reviewer"
 	}
 }

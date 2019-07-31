@@ -8,4 +8,25 @@
 
 import Foundation
 
-
+extension NetworkManager {
+	func getAllBooks(completion: @escaping (_ books: [BookWURL]?, _ error: String?) -> ()) {
+		router.request(.getBooks) { (data, response, error) in
+			let returnRequest = self.getArray(data, response, error, BookWURL.self)
+			completion(returnRequest.0, returnRequest.1)
+		}
+	}
+	
+	func getBookBy(id: Int, completion: @escaping (_ book: BookWReviews?, _ error: String?) -> ()) {
+		router.request(.getBookBy(id: id)) { (data, response, error) in
+			let returnRequest = self.getObject(data, response, error, BookWReviews.self)
+			completion(returnRequest.0, returnRequest.1)
+		}
+	}
+	
+	func post(review: ReviewRequest, completion: @escaping (_ book: BookWURL?, _ error: String?) -> ()) {
+		router.request(.postReview(request: review)) { (data, response, error) in
+			let returnRequest = self.getObject(data, response, error, BookWURL.self)
+			completion(returnRequest.0, returnRequest.1)
+		}
+	}
+}
