@@ -15,6 +15,7 @@ struct Book: Equatable, Codable {
 	var company: String
 	var rating: Double
 	
+	
 	//	var description: String
 //	var image: UIImage
 }

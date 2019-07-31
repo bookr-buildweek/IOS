@@ -86,7 +86,6 @@
                                 </state>
                                 <connections>
                                     <action selector="signInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MZR-lX-om3"/>
-                                    <segue destination="s6f-xd-evx" kind="presentation" id="R5A-bz-x3h"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -132,14 +131,6 @@
             </objects>
             <point key="canvasLocation" x="157" y="127"/>
         </scene>
-        <!--Profile-->
-        <scene sceneID="sz6-hE-z6u">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="s6f-xd-evx" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SVU-PB-sFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1417" y="446"/>
-        </scene>
         <!--Create Account-->
         <scene sceneID="4dq-1n-Eaa">
             <objects>
@@ -148,18 +139,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tuz-3J-f8u">
-                                <rect key="frame" x="119" y="168" width="177" height="76"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tuz-3J-f8u">
+                                <rect key="frame" x="20" y="168" width="374" height="76"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPV-GW-t6M">
-                                        <rect key="frame" x="0.0" y="0.0" width="177" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
                                         <state key="normal" title="Sign in with Google">
                                             <color key="titleColor" red="0.18229476789999999" green="0.47173935169999998" blue="0.1269543853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJ3-4X-xOU">
-                                        <rect key="frame" x="0.0" y="42" width="177" height="34"/>
+                                        <rect key="frame" x="0.0" y="42" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
                                         <state key="normal" title="Sign in with Facebook">
                                             <color key="titleColor" red="0.18229476789999999" green="0.47173935169999998" blue="0.1269543853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -237,8 +228,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Create your account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juo-2h-daw">
-                                <rect key="frame" x="81" y="118" width="252.5" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juo-2h-daw">
+                                <rect key="frame" x="20" y="118" width="374" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" red="0.081734262406826019" green="0.30554103851318359" blue="0.086580686271190643" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -247,7 +238,7 @@
                                 <rect key="frame" x="20" y="618.5" width="374" height="33.5"/>
                                 <color key="backgroundColor" red="0.084653325378894806" green="0.34820595383644104" blue="0.090688027441501617" alpha="0.49682467409999997" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="SIGN IN">
+                                <state key="normal" title="CREATE ACCOUNT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -265,6 +256,7 @@
                             <constraint firstItem="ckr-KS-C4g" firstAttribute="trailing" secondItem="P4X-b4-nU7" secondAttribute="trailing" constant="20" id="9EB-9m-b1Z"/>
                             <constraint firstItem="jdE-nN-Hu3" firstAttribute="top" secondItem="zNg-vS-9t2" secondAttribute="bottom" constant="8" symbolic="YES" id="9bE-6E-D3C"/>
                             <constraint firstItem="l7Z-6u-a57" firstAttribute="top" secondItem="Cxo-rI-YvF" secondAttribute="bottom" constant="8" id="E7f-jh-Vec"/>
+                            <constraint firstItem="ckr-KS-C4g" firstAttribute="trailing" secondItem="tuz-3J-f8u" secondAttribute="trailing" constant="20" id="Hw3-IR-Sbp"/>
                             <constraint firstItem="WHQ-Mm-ocP" firstAttribute="top" secondItem="LRf-Lp-ANF" secondAttribute="bottom" constant="8" id="Krl-OJ-pW9"/>
                             <constraint firstItem="tcZ-jW-gTr" firstAttribute="top" secondItem="vHs-0O-OXT" secondAttribute="bottom" constant="20" id="PwJ-dd-Dlc"/>
                             <constraint firstItem="42z-cc-BGu" firstAttribute="top" secondItem="P4X-b4-nU7" secondAttribute="bottom" constant="8" id="QIR-DY-rtG"/>
@@ -274,9 +266,11 @@
                             <constraint firstItem="tuz-3J-f8u" firstAttribute="top" secondItem="juo-2h-daw" secondAttribute="bottom" constant="20" id="VXa-YD-r5M"/>
                             <constraint firstItem="LRf-Lp-ANF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zNg-vS-9t2" secondAttribute="trailing" constant="80" id="XhE-Lc-f76"/>
                             <constraint firstItem="tcZ-jW-gTr" firstAttribute="leading" secondItem="ckr-KS-C4g" secondAttribute="leading" constant="90" id="Xq5-pI-g6d"/>
+                            <constraint firstItem="juo-2h-daw" firstAttribute="leading" secondItem="ckr-KS-C4g" secondAttribute="leading" constant="20" id="a4c-8V-vb5"/>
                             <constraint firstItem="zNg-vS-9t2" firstAttribute="leading" secondItem="ckr-KS-C4g" secondAttribute="leading" constant="20" id="aV8-Ce-6xy"/>
                             <constraint firstItem="vHs-0O-OXT" firstAttribute="top" secondItem="naJ-9Y-8UL" secondAttribute="bottom" constant="8" id="b7F-F4-awO"/>
                             <constraint firstItem="ckr-KS-C4g" firstAttribute="trailing" secondItem="42z-cc-BGu" secondAttribute="trailing" constant="20" id="bKl-nj-pEK"/>
+                            <constraint firstItem="tuz-3J-f8u" firstAttribute="leading" secondItem="ckr-KS-C4g" secondAttribute="leading" constant="20" id="blP-mV-YyT"/>
                             <constraint firstItem="Cxo-rI-YvF" firstAttribute="top" secondItem="WHQ-Mm-ocP" secondAttribute="bottom" constant="20" id="dXl-mI-w8i"/>
                             <constraint firstItem="naJ-9Y-8UL" firstAttribute="top" secondItem="42z-cc-BGu" secondAttribute="bottom" constant="20" id="dqD-TK-2XK"/>
                             <constraint firstItem="ckr-KS-C4g" firstAttribute="trailing" secondItem="vHs-0O-OXT" secondAttribute="trailing" constant="20" id="fNv-VY-EK9"/>
@@ -292,6 +286,7 @@
                             <constraint firstItem="ckr-KS-C4g" firstAttribute="trailing" secondItem="AIh-9K-t8S" secondAttribute="trailing" constant="20" id="tPj-bM-SNQ"/>
                             <constraint firstItem="WHQ-Mm-ocP" firstAttribute="leading" secondItem="jdE-nN-Hu3" secondAttribute="trailing" constant="14" id="u4Z-JF-otE"/>
                             <constraint firstItem="P4X-b4-nU7" firstAttribute="leading" secondItem="ckr-KS-C4g" secondAttribute="leading" constant="20" id="uPH-mp-Mfy"/>
+                            <constraint firstItem="ckr-KS-C4g" firstAttribute="trailing" secondItem="juo-2h-daw" secondAttribute="trailing" constant="20" id="uSo-2X-XYX"/>
                             <constraint firstItem="juo-2h-daw" firstAttribute="top" secondItem="ckr-KS-C4g" secondAttribute="top" constant="74" id="uoq-nF-bns"/>
                             <constraint firstItem="l7Z-6u-a57" firstAttribute="leading" secondItem="ckr-KS-C4g" secondAttribute="leading" constant="20" id="xTU-bP-mEr"/>
                         </constraints>
@@ -300,7 +295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1I3-Cx-T1F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="157" y="822"/>
+            <point key="canvasLocation" x="157" y="863"/>
         </scene>
     </scenes>
 </document>

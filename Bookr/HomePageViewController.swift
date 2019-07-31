@@ -8,18 +8,39 @@
 
 import UIKit
 
-class HomePageViewController: UIViewController {
+class HomePageViewController: UIViewController
+{
 	
-	// let bookCoontroller = BookController()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
 	
-    
+	
+	var bookController = BookController()
+	var book: Book?
+//
+//	@IBOutlet weak var collectionView: UICollectionView!
 
+	override func viewDidLoad() {
+		super.viewDidLoad()
+
+	}
+
+//
+//	func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+//		//#warning Incomplete method implementation -- Return the number of sections
+//		return 2
+//	}
+//
+//	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//		//#warning Incomplete method implementation -- Return the number of items in the section
+//		return 3
+//
+//	}
+//
+//	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCell", for: indexPath) as! UICollectionViewCell
+//
+//		return cell
+//	}
 	
 
 }

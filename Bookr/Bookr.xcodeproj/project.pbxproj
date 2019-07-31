@@ -15,7 +15,6 @@
 		B506A53722EF5D5800061FCF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B506A53322EF5D5800061FCF /* Login.storyboard */; };
 		F5FB775A22EFA04C0097D572 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB775922EFA04C0097D572 /* Book.swift */; };
 		F5FB775C22EFB2190097D572 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB775B22EFB2190097D572 /* HomePageViewController.swift */; };
-		F5FB775E22EFB2B60097D572 /* HomePageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB775D22EFB2B60097D572 /* HomePageCollectionViewController.swift */; };
 		F5FB776222F097070097D572 /* BookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB776122F097070097D572 /* BookController.swift */; };
 		F5FB776422F0A2850097D572 /* BookResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB776322F0A2850097D572 /* BookResultsTableViewController.swift */; };
 		F5FB776622F0A4F30097D572 /* HeroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB776522F0A4F20097D572 /* HeroPageViewController.swift */; };
@@ -37,7 +36,6 @@
 		B506A53322EF5D5800061FCF /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F5FB775922EFA04C0097D572 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = SOURCE_ROOT; };
 		F5FB775B22EFB2190097D572 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = SOURCE_ROOT; };
-		F5FB775D22EFB2B60097D572 /* HomePageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
 		F5FB776122F097070097D572 /* BookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookController.swift; sourceTree = "<group>"; };
 		F5FB776322F0A2850097D572 /* BookResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResultsTableViewController.swift; sourceTree = "<group>"; };
 		F5FB776522F0A4F20097D572 /* HeroPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeroPageViewController.swift; path = ../../../HeroPageViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				F5FB776922F0A5370097D572 /* CreatePageViewController.swift */,
 				F5FB776722F0A5260097D572 /* LoginPageViewController.swift */,
 				F5FB776B22F0A65A0097D572 /* BookProfileTableViewController.swift */,
-				F5FB775D22EFB2B60097D572 /* HomePageCollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -211,7 +208,6 @@
 				F5FB776222F097070097D572 /* BookController.swift in Sources */,
 				B506A50C22EF58A500061FCF /* AppDelegate.swift in Sources */,
 				F5FB776822F0A5260097D572 /* LoginPageViewController.swift in Sources */,
-				F5FB775E22EFB2B60097D572 /* HomePageCollectionViewController.swift in Sources */,
 				F5FB775C22EFB2190097D572 /* HomePageViewController.swift in Sources */,
 				F5FB776E22F0ABE90097D572 /* Profile.swift in Sources */,
 				F5FB776C22F0A65A0097D572 /* BookProfileTableViewController.swift in Sources */,
