@@ -10,34 +10,62 @@ import UIKit
 
 class LoginPageViewController: UIViewController {
 	
-	var profileController: ProfileController?
-	var profiles: Profile? {
-		didSet {
-			updateViews()
-		}
-	}
+	//MARK: - IBOutlets
 	
 	@IBOutlet weak var emailTextField: UITextField!
 	@IBOutlet weak var passwordTextField: UITextField!
 	
-	@IBAction func signInButton(_ sender: UIButton) {
-		guard let email = emailTextField.text,
-			let password = passwordTextField.text else { return }
-		//TODO: - fix to save users info
-//		if profiles == nil {
-//			profileController
-//		}
-	}
+	//MARK: - Properties
 	
+	
+	//MARK: - Life Cycle
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 
+		configTextFields()
     }
 	
-	private func updateViews() {
+	//MARK: - IBActions
+	
+	@IBAction func signInButton(_ sender: UIButton) {
+		guard let email = emailTextField.optionalText, let password = passwordTextField.optionalText else { return }
+		let login = LoginRequest(email: email, password: password)
 		
+		NetworkManager.shared.login(credentials: login) { (results, error) in
+			if let error = error {
+				print(error)
+			} else if let results = results {
+				print(results)
+				SettingsController.shared.persist(credentials: login)
+				SettingsController.shared.userToken = results.token
+				#warning("Create segue to Profile")
+			}
+		}
+	}
+	
+	//MARK: - Helpers
+	
+	private func configTextFields() {
+		emailTextField.delegate = self
+		passwordTextField.delegate = self
 	}
 
 
+}
+
+//MARK: - UITextField Delegate
+
+extension LoginPageViewController: UITextFieldDelegate {
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		let nextTag = textField.tag + 1
+		
+		if let nextResponder = textField.superview?.viewWithTag(nextTag) {
+			nextResponder.becomeFirstResponder()
+		} else {
+			textField.resignFirstResponder()
+		}
+		
+		return true
+	}
 }
