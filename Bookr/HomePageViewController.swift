@@ -8,10 +8,10 @@
 
 import UIKit
 
-class HomePageViewController: UIViewController
-{
+class HomePageViewController: UIViewController {
 	
 
+	@IBOutlet weak var bookFilterCollectionView: UICollectionView!
 	
 	
 	var bookController = BookController()
@@ -43,4 +43,23 @@ class HomePageViewController: UIViewController
 //	}
 	
 
+}
+
+extension HomePageViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+	
+	var filterImages: [UIImage] {
+		let names = "art ball book globe math science".components(separatedBy: " ").map { "\($0)Filter" }
+		let images = names.compactMap { UIImage(named: $0) }
+		return images
+	}
+	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		return filterImages.count
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCell", for: indexPath) as? FilterCollectionViewCell else { return  UICollectionViewCell() }
+		
+		cell.filterImageView.image = filterImages[indexPath.item]
+		return cell
+	}
 }
