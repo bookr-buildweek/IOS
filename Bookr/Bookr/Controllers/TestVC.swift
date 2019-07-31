@@ -99,7 +99,7 @@ class TestVC: UIViewController {
 	}
 	
 	@IBAction func getReview(_ sender: Any) {
-		networkManager.getReviewBy(id: 1) { (review, error) in
+		networkManager.getReviewBy(reviewId: 6) { (review, error) in
 			if let error = error {
 				print(error)
 			}
@@ -110,7 +110,7 @@ class TestVC: UIViewController {
 	}
 	
 	@IBAction func postReview(_ sender: Any) {
-		networkManager.post(review: ReviewRequest(bookId: 1, review: "Thought it was aight", userId: 4, ratings: 3)) { (review, error) in
+		networkManager.post(review: ReviewRequest(review: "Thought it was aight", userId: 4, ratings: 3), onBookId: 1) { (review, error) in
 			if let error = error {
 				print(error)
 			}
@@ -121,7 +121,7 @@ class TestVC: UIViewController {
 	}
 	
 	@IBAction func editReview(_ sender: Any) {
-		networkManager.editReview(data: ReviewRequest(bookId: 1, review: "Thought it was great!", userId: 4, ratings: 5)) { (review, error) in
+		networkManager.editReview(reviewId: 6, data: ReviewRequest(review: "Thought it was great!", userId: 4, ratings: 5)) { (review, error) in
 			if let error = error {
 				print(error)
 			}
@@ -132,7 +132,7 @@ class TestVC: UIViewController {
 	}
 	
 	@IBAction func deleteReview(_ sender: Any) {
-		networkManager.post(review: ReviewRequest(bookId: 1, review: "Thought it was aight", userId: 4, ratings: 3)) { (review, error) in
+		networkManager.deleteReview(reviewId: 6) { (review, error) in
 			if let error = error {
 				print(error)
 			}

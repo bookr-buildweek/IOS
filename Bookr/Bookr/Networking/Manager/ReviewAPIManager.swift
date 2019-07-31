@@ -16,22 +16,22 @@ extension NetworkManager {
 		}
 	}
 	
-	func getReviewBy(id: Int, completion: @escaping (_ reviews: Review?, _ error: String?) -> ()) {
-		router.request(.getReviewBy(id: id)) { (data, response, error) in
+	func getReviewBy(reviewId: Int, completion: @escaping (_ reviews: Review?, _ error: String?) -> ()) {
+		router.request(.getReviewBy(id: reviewId)) { (data, response, error) in
 			let returnRequest = self.getObject(data, response, error, Review.self)
 			completion(returnRequest.0, returnRequest.1)
 		}
 	}
 	
-	func editReview(data: ReviewRequest, completion: @escaping (_ reviews: Review?, _ error: String?) -> ()) {
-		router.request(.putReviewBy(bookId: data.bookId, request: data)) { (data, response, error) in
+	func editReview(reviewId: Int, data: ReviewRequest, completion: @escaping (_ reviews: Review?, _ error: String?) -> ()) {
+		router.request(.putReviewBy(id: reviewId, request: data)) { (data, response, error) in
 			let returnRequest = self.getObject(data, response, error, Review.self)
 			completion(returnRequest.0, returnRequest.1)
 		}
 	}
 	
-	func deleteReview(id: Int, completion: @escaping (_ reviews: Review?, _ error: String?) -> ()) {
-		router.request(.deleteReviewBy(id: id)) { (data, response, error) in
+	func deleteReview(reviewId: Int, completion: @escaping (_ reviews: Review?, _ error: String?) -> ()) {
+		router.request(.deleteReviewBy(id: reviewId)) { (data, response, error) in
 			let returnRequest = self.getObject(data, response, error, Review.self)
 			completion(returnRequest.0, returnRequest.1)
 		}

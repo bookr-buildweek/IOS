@@ -15,10 +15,10 @@ enum BookrRouter {
 	case getBooks
 	case getBookBy(id: Int)
 	case deleteBookBy(id: Int)
-	case postReview(request: ReviewRequest)
+	case postReview(bookId: Int, request: ReviewRequest)
 	case getReviewBy(id: Int)
 	case getReviewsBy(userId: Int)
-	case putReviewBy(bookId: Int, request: ReviewRequest)
+	case putReviewBy(id: Int, request: ReviewRequest)
 	case deleteReviewBy(id: Int)
 	case addBook(request: BookRequest)
 }
@@ -42,8 +42,8 @@ extension BookrRouter: EndPointType {
 		case .getBookBy(let id),
 			 .deleteBookBy(let id):
 			return "books/\(id)"
-		case .postReview(let review):
-			return "books/\(review.bookId)/review"
+		case .postReview(let bookId, _):
+			return "books/\(bookId)/review"
 		case .addBook(let book):
 			return "books/\(book.bookId)/shelf"
 		case .getReviewsBy(let userId):
@@ -87,9 +87,8 @@ extension BookrRouter: EndPointType {
 										"email":data.email,
 										"password":data.password
 										], urlParameters: nil)
-		case .postReview(let data):
+		case .postReview(_, let data):
 			return .requestParameters(bodyParameters: [
-										"book_id":data.bookId,
 										"review":data.review,
 										"reviewer":data.userId,
 										"ratings":data.ratings

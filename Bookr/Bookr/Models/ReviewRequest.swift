@@ -9,13 +9,11 @@
 import Foundation
 
 struct ReviewRequest: Codable {
-	let bookId: Int
 	let review: String
 	let userId: Int
 	let ratings: Int
 	
 	enum CodingKeys: String, CodingKey {
-		case bookId = "bookId"
 		case review
 		case ratings
 		case userId = "reviewer"
