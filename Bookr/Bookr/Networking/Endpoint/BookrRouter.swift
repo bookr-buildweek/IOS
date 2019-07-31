@@ -9,17 +9,18 @@
 import Foundation
 
 enum BookrRouter {
-	case register(request: User)
+	case register(request: RegisterRequest)
 	case login(request: LoginRequest)
 	case getUserBy(id: Int)
 	case getBooks
 	case getBookBy(id: Int)
 	case deleteBookBy(id: Int)
-	case postReviewOn(bookId: Int)
+	case postReview(bookId: Int, request: ReviewRequest)
 	case getReviewBy(id: Int)
 	case getReviewsBy(userId: Int)
-	case putReviewBy(bookId: Int)
+	case putReviewBy(id: Int, request: ReviewRequest)
 	case deleteReviewBy(id: Int)
+	case addBook(request: BookRequest)
 }
 
 extension BookrRouter: EndPointType {
@@ -41,14 +42,16 @@ extension BookrRouter: EndPointType {
 		case .getBookBy(let id),
 			 .deleteBookBy(let id):
 			return "books/\(id)"
-		case .postReviewOn(let bookId):
+		case .postReview(let bookId, _):
 			return "books/\(bookId)/review"
+		case .addBook(let book):
+			return "books/\(book.bookId)/shelf"
 		case .getReviewsBy(let userId):
 			return "user/\(userId)/reviews"
 		case .getReviewBy(let id),
-			 .putReviewBy(let id),
+			 .putReviewBy(let id, _),
 			 .deleteReviewBy(let id):
-			return "review/\(id)"
+			return "reviews/\(id)"
 		}
 	}
 	
@@ -56,7 +59,7 @@ extension BookrRouter: EndPointType {
 		switch self {
 		case .register,
 			 .login,
-			 .postReviewOn:
+			 .postReview:
 			return .post
 		case .getUserBy,
 			 .getBooks,
@@ -64,7 +67,8 @@ extension BookrRouter: EndPointType {
 			 .getReviewBy,
 			 .getReviewsBy:
 			return .get
-		case .putReviewBy:
+		case .putReviewBy,
+			 .addBook:
 			return .put
 		case .deleteBookBy,
 			 .deleteReviewBy:
@@ -76,6 +80,21 @@ extension BookrRouter: EndPointType {
 		switch self {
 		case .login(let data):
 			return .requestParameters(bodyParameters: ["email":data.email, "password":data.password], urlParameters: nil)
+		case .register(let data):
+			return .requestParameters(bodyParameters: [
+										"first_name":data.firstName,
+										"last_name":data.lastName,
+										"email":data.email,
+										"password":data.password
+										], urlParameters: nil)
+		case .postReview(_, let data):
+			return .requestParameters(bodyParameters: [
+										"review":data.review,
+										"reviewer":data.userId,
+										"ratings":data.ratings
+										], urlParameters: nil)
+		case .addBook(let data):
+			return .requestParameters(bodyParameters: ["book_id":data.bookId, "user_id":data.userId], urlParameters: nil)
 		default:
 			return .request
 		}
@@ -83,12 +102,6 @@ extension BookrRouter: EndPointType {
 	
 	var headers: HTTPHeaders? {
 		switch self {
-//		case .getUserBy(_),
-//			 .getBooks,
-//			 .getBookBy(_),
-//			 .getReviewBy(_),
-//			 .getReviewsBy(_):
-//			return ["token":NetworkManager.token]
 		default:
 			return nil
 		}
