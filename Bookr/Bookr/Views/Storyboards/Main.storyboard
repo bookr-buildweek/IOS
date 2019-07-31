@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mvU-AJ-pfN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HHa-J0-e6r">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,132 +10,119 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--TestVC-->
+        <!--View Controller-->
         <scene sceneID="heT-dw-tVp">
             <objects>
-                <viewController id="mvU-AJ-pfN" customClass="TestVC" customModule="Bookr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mvU-AJ-pfN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="74e-mf-6rm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mGO-c4-iWL">
-                                <rect key="frame" x="0.0" y="39" width="414" height="818"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oxn-Nh-7uc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qqb-F8-d5C">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <state key="normal" title="Login">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="loginBtn:" destination="mvU-AJ-pfN" eventType="touchUpInside" id="n7d-cQ-aqN"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oy-Sb-NWx">
-                                        <rect key="frame" x="0.0" y="82" width="414" height="81.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <state key="normal" title="Register">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="registerBtn:" destination="mvU-AJ-pfN" eventType="touchUpInside" id="1on-16-wVv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBl-8Z-cJu">
-                                        <rect key="frame" x="0.0" y="163.5" width="414" height="82"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <state key="normal" title="User">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="getUser:" destination="mvU-AJ-pfN" eventType="touchUpInside" id="F4g-Ck-C7Y"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSq-y9-tfX">
-                                        <rect key="frame" x="0.0" y="245.5" width="414" height="81.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <state key="normal" title="All Books">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="allBooks:" destination="mvU-AJ-pfN" eventType="touchUpInside" id="XtI-iV-OPa"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOr-AN-q5f">
-                                        <rect key="frame" x="0.0" y="327" width="414" height="82"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <state key="normal" title="Book">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="getBook:" destination="mvU-AJ-pfN" eventType="touchUpInside" id="TrP-pM-78j"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CI-bA-TcH">
-                                        <rect key="frame" x="0.0" y="409" width="414" height="82"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <state key="normal" title="All Reviews">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IfZ-Bv-MbW">
+                                        <rect key="frame" x="20" y="201.5" width="374" height="301.5"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2K-zy-cDg">
+                                        <rect key="frame" x="20" y="533" width="374" height="33"/>
+                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <state key="normal" title="GET STARTED">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="userReviews:" destination="mvU-AJ-pfN" eventType="touchUpInside" id="z60-93-Zd7"/>
+                                            <segue destination="ssA-Vu-IlJ" kind="popoverPresentation" popoverAnchorView="H2K-zy-cDg" id="0Mb-BR-H6z">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pki-LQ-HhE">
-                                        <rect key="frame" x="0.0" y="491" width="414" height="81.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <state key="normal" title="Review">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="getReview:" destination="mvU-AJ-pfN" eventType="touchUpInside" id="G6d-Cb-aKF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNH-q7-joo">
-                                        <rect key="frame" x="0.0" y="572.5" width="414" height="82"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <state key="normal" title="Post Review">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="postReview:" destination="mvU-AJ-pfN" eventType="touchUpInside" id="dIv-cl-YoJ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7f-YY-Ud6">
-                                        <rect key="frame" x="0.0" y="654.5" width="414" height="81.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <state key="normal" title="Edit Review">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="editReview:" destination="mvU-AJ-pfN" eventType="touchUpInside" id="qjd-rH-SLi"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfk-fg-Opj">
-                                        <rect key="frame" x="0.0" y="736" width="414" height="82"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <state key="normal" title="Delete Review">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="deleteReview:" destination="mvU-AJ-pfN" eventType="touchUpInside" id="y2J-jC-L5H"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pcH-bE-jqi">
+                                        <rect key="frame" x="20" y="119" width="374" height="52.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOKR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBh-BM-oh6">
+                                                <rect key="frame" x="0.0" y="0.0" width="71" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your source for all things textbook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaq-KA-fGz">
+                                                <rect key="frame" x="0.0" y="32" width="261.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="H2K-zy-cDg" secondAttribute="bottom" constant="159" id="0uN-ZI-kWI"/>
+                                    <constraint firstItem="H2K-zy-cDg" firstAttribute="leading" secondItem="oxn-Nh-7uc" secondAttribute="leading" constant="20" id="Koo-Pc-xdD"/>
+                                    <constraint firstItem="IfZ-Bv-MbW" firstAttribute="leading" secondItem="oxn-Nh-7uc" secondAttribute="leading" constant="20" id="Nu5-ef-a4u"/>
+                                    <constraint firstAttribute="trailing" secondItem="H2K-zy-cDg" secondAttribute="trailing" constant="20" id="OTs-Ze-g8y"/>
+                                    <constraint firstItem="pcH-bE-jqi" firstAttribute="leading" secondItem="oxn-Nh-7uc" secondAttribute="leading" constant="20" id="P6G-29-64x"/>
+                                    <constraint firstItem="H2K-zy-cDg" firstAttribute="top" secondItem="IfZ-Bv-MbW" secondAttribute="bottom" constant="30" id="S6R-2J-ysU"/>
+                                    <constraint firstAttribute="trailing" secondItem="pcH-bE-jqi" secondAttribute="trailing" constant="20" id="aOm-J3-iAU"/>
+                                    <constraint firstAttribute="trailing" secondItem="IfZ-Bv-MbW" secondAttribute="trailing" constant="20" id="g1v-yk-SUp"/>
+                                    <constraint firstItem="pcH-bE-jqi" firstAttribute="top" secondItem="oxn-Nh-7uc" secondAttribute="top" constant="119" id="tPO-xQ-sjF"/>
+                                    <constraint firstItem="IfZ-Bv-MbW" firstAttribute="top" secondItem="pcH-bE-jqi" secondAttribute="bottom" constant="30" id="y8D-hB-0kp"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mGO-c4-iWL" firstAttribute="centerX" secondItem="74e-mf-6rm" secondAttribute="centerX" id="ek2-rE-xV3"/>
-                            <constraint firstItem="mGO-c4-iWL" firstAttribute="height" secondItem="LYg-UR-87P" secondAttribute="height" id="nrJ-gQ-mJI"/>
-                            <constraint firstItem="mGO-c4-iWL" firstAttribute="width" secondItem="LYg-UR-87P" secondAttribute="width" id="rwZ-Hg-Iqb"/>
-                            <constraint firstItem="mGO-c4-iWL" firstAttribute="centerY" secondItem="74e-mf-6rm" secondAttribute="centerY" id="xoA-gC-Isn"/>
+                            <constraint firstItem="oxn-Nh-7uc" firstAttribute="leading" secondItem="LYg-UR-87P" secondAttribute="leading" id="BZm-3m-EIk"/>
+                            <constraint firstItem="oxn-Nh-7uc" firstAttribute="top" secondItem="LYg-UR-87P" secondAttribute="top" id="bqB-HJ-vcR"/>
+                            <constraint firstItem="LYg-UR-87P" firstAttribute="trailing" secondItem="oxn-Nh-7uc" secondAttribute="trailing" id="soz-cr-DPX"/>
+                            <constraint firstItem="LYg-UR-87P" firstAttribute="bottom" secondItem="oxn-Nh-7uc" secondAttribute="bottom" id="y1g-Sb-jsN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LYg-UR-87P"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ylo-WW-pgU">
+                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="mHd-59-6DZ"/>
+                        <barButtonItem key="rightBarButtonItem" title="LOGIN" id="zg6-g1-o5X">
+                            <connections>
+                                <segue destination="ssA-Vu-IlJ" kind="popoverPresentation" popoverAnchorBarButtonItem="zg6-g1-o5X" id="eRu-8b-CJk">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hun-8i-sNE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="D1G-OT-lCt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="ssA-Vu-IlJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SN5-UH-stB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="-93"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ke5-T0-tpe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HHa-J0-e6r" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z4J-ME-MAO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mvU-AJ-pfN" kind="relationship" relationship="rootViewController" id="LB3-iF-Zpp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRY-sL-3Vv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="91" y="127"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eRu-8b-CJk"/>
+    </inferredMetricsTieBreakers>
 </document>
