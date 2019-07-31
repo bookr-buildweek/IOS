@@ -25,9 +25,9 @@ enum Result<String> {
 
 struct NetworkManager {
 	let token: String?
-	private let router = Router<BookrRouter>()
+	let router = Router<BookrRouter>()
 	
-	private func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String> {
+	func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String> {
 		switch response.statusCode {
 		case 200...299: return .success
 		case 401...500: return .failure(NetworkResponse.authenticationError.rawValue)
@@ -37,63 +37,59 @@ struct NetworkManager {
 		}
 	}
 	
-//	func login(user: User, completion: @escaping (_ login: Login?, _ error: String?) -> ()) {
-//		router.request(.login) { (data, response, error) in
-//			if error != nil {
-//				completion(nil, "Please check your network connection.")
-//			}
-//
-//			if let response = response as? HTTPURLResponse {
-//				let result = self.handleNetworkResponse(response)
-//				switch result {
-//				case .success:
-//					guard let responseData = data else {
-//						completion(nil, NetworkResponse.noData.rawValue)
-//						return
-//					}
-//
-//					do {
-//						let decoder = JSONDecoder()
-//						decoder.keyDecodingStrategy = .convertFromSnakeCase
-//						let apiResponse = try decoder.decode(Login.self, from: responseData)
-//						completion(apiResponse, nil)
-//					} catch {
-//						completion(nil, NetworkResponse.unableToDecode.rawValue)
-//					}
-//				case .failure(let networkFailureError):
-//					completion(nil, networkFailureError)
-//				}
-//			}
-//		}
-//	}
-	
-	func login(credentials: LoginRequest, completion: @escaping (_ login: Login?, _ error: String?) -> ()) {
-		router.request(.login(request: credentials)) { (data, response, error) in
-			if error != nil {
-				completion(nil, "Please check your network connection.")
-			}
-			
-			if let response = response as? HTTPURLResponse {
-				let result = self.handleNetworkResponse(response)
-				switch result {
-				case .success:
-					guard let responseData = data else {
-						completion(nil, NetworkResponse.noData.rawValue)
-						return
-					}
-					
-					do {
-						let decoder = JSONDecoder()
-						decoder.keyDecodingStrategy = .convertFromSnakeCase
-						let apiResponse = try decoder.decode(Login.self, from: responseData)
-						completion(apiResponse, nil)
-					} catch {
-						completion(nil, NetworkResponse.unableToDecode.rawValue)
-					}
-				case .failure(let networkFailureError):
-					completion(nil, networkFailureError)
+	func getObject<T: Codable>(_ data: Data?, _ response: URLResponse?, _ error: Error?,_ returnType: T.Type) -> (T?, String?) {
+		if error != nil {
+			return (nil, "Please check your network connection.")
+		}
+		
+		if let response = response as? HTTPURLResponse {
+			let result = self.handleNetworkResponse(response)
+			switch result {
+			case .success:
+				guard let responseData = data else {
+					return (nil, NetworkResponse.noData.rawValue)
 				}
+				
+				do {
+					let decoder = JSONDecoder()
+					decoder.keyDecodingStrategy = .convertFromSnakeCase
+					let apiResponse = try decoder.decode(returnType, from: responseData)
+					return (apiResponse, nil)
+				} catch {
+					return (nil, NetworkResponse.unableToDecode.rawValue)
+				}
+			case .failure(let networkFailureError):
+				return (nil, networkFailureError)
 			}
 		}
+		return (nil, NetworkResponse.failed.rawValue)
+	}
+	
+	func getArray<T: Codable>(_ data: Data?, _ response: URLResponse?, _ error: Error?,_ returnType: T.Type) -> ([T]?, String?) {
+		if error != nil {
+			return (nil, "Please check your network connection.")
+		}
+		
+		if let response = response as? HTTPURLResponse {
+			let result = self.handleNetworkResponse(response)
+			switch result {
+			case .success:
+				guard let responseData = data else {
+					return (nil, NetworkResponse.noData.rawValue)
+				}
+				
+				do {
+					let decoder = JSONDecoder()
+					decoder.keyDecodingStrategy = .convertFromSnakeCase
+					let apiResponse = try decoder.decode([T].self, from: responseData)
+					return (apiResponse, nil)
+				} catch {
+					return (nil, NetworkResponse.unableToDecode.rawValue)
+				}
+			case .failure(let networkFailureError):
+				return (nil, networkFailureError)
+			}
+		}
+		return (nil, NetworkResponse.failed.rawValue)
 	}
 }
