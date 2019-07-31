@@ -24,8 +24,13 @@ enum Result<String> {
 }
 
 struct NetworkManager {
-	let token: String?
+	static let shared = NetworkManager()
+	
 	let router = Router<BookrRouter>()
+	
+	private init() {
+		
+	}
 	
 	func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String> {
 		switch response.statusCode {
