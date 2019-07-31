@@ -13,21 +13,16 @@
 		B506A53522EF5D5800061FCF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B506A53122EF5D5800061FCF /* Profile.storyboard */; };
 		B506A53622EF5D5800061FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B506A53222EF5D5800061FCF /* Main.storyboard */; };
 		B506A53722EF5D5800061FCF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B506A53322EF5D5800061FCF /* Login.storyboard */; };
-		B506A53A22EF60BD00061FCF /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506A53922EF60BD00061FCF /* EndPointType.swift */; };
-		B506A54022EF619D00061FCF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506A53F22EF619D00061FCF /* HTTPMethod.swift */; };
-		B506A54222EF621A00061FCF /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506A54122EF621A00061FCF /* HTTPTask.swift */; };
-		B506A54422EF62ED00061FCF /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506A54322EF62ED00061FCF /* ParameterEncoding.swift */; };
-		B506A54622EF651000061FCF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506A54522EF651000061FCF /* NetworkError.swift */; };
-		B506A54822EF658300061FCF /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506A54722EF658300061FCF /* URLParameterEncoder.swift */; };
-		B506A54A22EF689E00061FCF /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506A54922EF689E00061FCF /* JSONParameterEncoder.swift */; };
-		B5FE506622EF69D400EB6C6D /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE506522EF69D400EB6C6D /* NetworkRouter.swift */; };
-		B5FE506822EF7EB100EB6C6D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE506722EF7EB100EB6C6D /* Router.swift */; };
-		B5FE506A22EF883700EB6C6D /* BookrRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE506922EF883700EB6C6D /* BookrRouter.swift */; };
-		B5FE506C22EFAF8200EB6C6D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE506B22EFAF8200EB6C6D /* User.swift */; };
-		B5FE506E22EFB62000EB6C6D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE506D22EFB62000EB6C6D /* NetworkManager.swift */; };
-		B5FE507022EFBC1100EB6C6D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE506F22EFBC1100EB6C6D /* Login.swift */; };
-		B5FE507222EFC15E00EB6C6D /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507122EFC15E00EB6C6D /* TestVC.swift */; };
-		B5FE507422EFC74700EB6C6D /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507322EFC74700EB6C6D /* LoginRequest.swift */; };
+		F5FB775A22EFA04C0097D572 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB775922EFA04C0097D572 /* Book.swift */; };
+		F5FB775C22EFB2190097D572 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB775B22EFB2190097D572 /* HomePageViewController.swift */; };
+		F5FB776222F097070097D572 /* BookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB776122F097070097D572 /* BookController.swift */; };
+		F5FB776422F0A2850097D572 /* BookResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB776322F0A2850097D572 /* BookResultsTableViewController.swift */; };
+		F5FB776622F0A4F30097D572 /* HeroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB776522F0A4F20097D572 /* HeroPageViewController.swift */; };
+		F5FB776822F0A5260097D572 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB776722F0A5260097D572 /* LoginPageViewController.swift */; };
+		F5FB776A22F0A5370097D572 /* CreatePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB776922F0A5370097D572 /* CreatePageViewController.swift */; };
+		F5FB776C22F0A65A0097D572 /* BookProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB776B22F0A65A0097D572 /* BookProfileTableViewController.swift */; };
+		F5FB776E22F0ABE90097D572 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB776D22F0ABE90097D572 /* Profile.swift */; };
+		F5FB777022F0B5A80097D572 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB776F22F0B5A80097D572 /* ProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,21 +34,16 @@
 		B506A53122EF5D5800061FCF /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B506A53222EF5D5800061FCF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B506A53322EF5D5800061FCF /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		B506A53922EF60BD00061FCF /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
-		B506A53F22EF619D00061FCF /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		B506A54122EF621A00061FCF /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
-		B506A54322EF62ED00061FCF /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		B506A54522EF651000061FCF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		B506A54722EF658300061FCF /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
-		B506A54922EF689E00061FCF /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
-		B5FE506522EF69D400EB6C6D /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
-		B5FE506722EF7EB100EB6C6D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		B5FE506922EF883700EB6C6D /* BookrRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookrRouter.swift; sourceTree = "<group>"; };
-		B5FE506B22EFAF8200EB6C6D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B5FE506D22EFB62000EB6C6D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		B5FE506F22EFBC1100EB6C6D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		B5FE507122EFC15E00EB6C6D /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
-		B5FE507322EFC74700EB6C6D /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		F5FB775922EFA04C0097D572 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = SOURCE_ROOT; };
+		F5FB775B22EFB2190097D572 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = SOURCE_ROOT; };
+		F5FB776122F097070097D572 /* BookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookController.swift; sourceTree = "<group>"; };
+		F5FB776322F0A2850097D572 /* BookResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResultsTableViewController.swift; sourceTree = "<group>"; };
+		F5FB776522F0A4F20097D572 /* HeroPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeroPageViewController.swift; path = ../../../HeroPageViewController.swift; sourceTree = "<group>"; };
+		F5FB776722F0A5260097D572 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		F5FB776922F0A5370097D572 /* CreatePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePageViewController.swift; sourceTree = "<group>"; };
+		F5FB776B22F0A65A0097D572 /* BookProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookProfileTableViewController.swift; sourceTree = "<group>"; };
+		F5FB776D22F0ABE90097D572 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		F5FB776F22F0B5A80097D572 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileController.swift; path = ../../ProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +76,8 @@
 		B506A50A22EF58A500061FCF /* Bookr */ = {
 			isa = PBXGroup;
 			children = (
-				B506A53822EF603000061FCF /* Networking */,
+				F5FB776122F097070097D572 /* BookController.swift */,
+				F5FB776F22F0B5A80097D572 /* ProfileController.swift */,
 				B506A52D22EF5D5800061FCF /* Controllers */,
 				B506A52C22EF5D5800061FCF /* Models */,
 				B506A52E22EF5D5800061FCF /* Views */,
@@ -101,9 +92,8 @@
 		B506A52C22EF5D5800061FCF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B5FE506B22EFAF8200EB6C6D /* User.swift */,
-				B5FE506F22EFBC1100EB6C6D /* Login.swift */,
-				B5FE507322EFC74700EB6C6D /* LoginRequest.swift */,
+				F5FB775922EFA04C0097D572 /* Book.swift */,
+				F5FB776D22F0ABE90097D572 /* Profile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,7 +101,12 @@
 		B506A52D22EF5D5800061FCF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B5FE507122EFC15E00EB6C6D /* TestVC.swift */,
+				F5FB775B22EFB2190097D572 /* HomePageViewController.swift */,
+				F5FB776322F0A2850097D572 /* BookResultsTableViewController.swift */,
+				F5FB776522F0A4F20097D572 /* HeroPageViewController.swift */,
+				F5FB776922F0A5370097D572 /* CreatePageViewController.swift */,
+				F5FB776722F0A5260097D572 /* LoginPageViewController.swift */,
+				F5FB776B22F0A65A0097D572 /* BookProfileTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -132,56 +127,6 @@
 				B506A53322EF5D5800061FCF /* Login.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		B506A53822EF603000061FCF /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				B506A53E22EF60E300061FCF /* Endpoint */,
-				B506A53D22EF60DD00061FCF /* Manager */,
-				B506A53C22EF60D600061FCF /* Service */,
-				B506A53B22EF60CC00061FCF /* Encoding */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		B506A53B22EF60CC00061FCF /* Encoding */ = {
-			isa = PBXGroup;
-			children = (
-				B506A54322EF62ED00061FCF /* ParameterEncoding.swift */,
-				B506A54722EF658300061FCF /* URLParameterEncoder.swift */,
-				B506A54922EF689E00061FCF /* JSONParameterEncoder.swift */,
-			);
-			path = Encoding;
-			sourceTree = "<group>";
-		};
-		B506A53C22EF60D600061FCF /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				B506A53922EF60BD00061FCF /* EndPointType.swift */,
-				B506A53F22EF619D00061FCF /* HTTPMethod.swift */,
-				B506A54122EF621A00061FCF /* HTTPTask.swift */,
-				B506A54522EF651000061FCF /* NetworkError.swift */,
-				B5FE506522EF69D400EB6C6D /* NetworkRouter.swift */,
-				B5FE506722EF7EB100EB6C6D /* Router.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		B506A53D22EF60DD00061FCF /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				B5FE506D22EFB62000EB6C6D /* NetworkManager.swift */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		B506A53E22EF60E300061FCF /* Endpoint */ = {
-			isa = PBXGroup;
-			children = (
-				B5FE506922EF883700EB6C6D /* BookrRouter.swift */,
-			);
-			path = Endpoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,22 +202,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B506A54A22EF689E00061FCF /* JSONParameterEncoder.swift in Sources */,
-				B5FE506A22EF883700EB6C6D /* BookrRouter.swift in Sources */,
-				B506A54222EF621A00061FCF /* HTTPTask.swift in Sources */,
-				B5FE506E22EFB62000EB6C6D /* NetworkManager.swift in Sources */,
-				B5FE506822EF7EB100EB6C6D /* Router.swift in Sources */,
+				F5FB775A22EFA04C0097D572 /* Book.swift in Sources */,
+				F5FB776422F0A2850097D572 /* BookResultsTableViewController.swift in Sources */,
+				F5FB776622F0A4F30097D572 /* HeroPageViewController.swift in Sources */,
+				F5FB776222F097070097D572 /* BookController.swift in Sources */,
 				B506A50C22EF58A500061FCF /* AppDelegate.swift in Sources */,
-				B506A54422EF62ED00061FCF /* ParameterEncoding.swift in Sources */,
-				B5FE507022EFBC1100EB6C6D /* Login.swift in Sources */,
-				B506A54622EF651000061FCF /* NetworkError.swift in Sources */,
-				B506A54822EF658300061FCF /* URLParameterEncoder.swift in Sources */,
-				B5FE507222EFC15E00EB6C6D /* TestVC.swift in Sources */,
-				B5FE506C22EFAF8200EB6C6D /* User.swift in Sources */,
-				B506A53A22EF60BD00061FCF /* EndPointType.swift in Sources */,
-				B506A54022EF619D00061FCF /* HTTPMethod.swift in Sources */,
-				B5FE506622EF69D400EB6C6D /* NetworkRouter.swift in Sources */,
-				B5FE507422EFC74700EB6C6D /* LoginRequest.swift in Sources */,
+				F5FB776822F0A5260097D572 /* LoginPageViewController.swift in Sources */,
+				F5FB775C22EFB2190097D572 /* HomePageViewController.swift in Sources */,
+				F5FB776E22F0ABE90097D572 /* Profile.swift in Sources */,
+				F5FB776C22F0A65A0097D572 /* BookProfileTableViewController.swift in Sources */,
+				F5FB776A22F0A5370097D572 /* CreatePageViewController.swift in Sources */,
+				F5FB777022F0B5A80097D572 /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
