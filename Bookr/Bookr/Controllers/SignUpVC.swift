@@ -62,6 +62,7 @@ class SignUpVC: UIViewController {
 				self.presentInfoAlert(title: "Error", message: error)
 			} else {
 				let login = LoginRequest(email: newUser.email, password: newUser.password)
+				SettingsController.shared.isSaveCredentials = true
 				SettingsController.shared.persist(credentials: login)
 				SettingsController.shared.userToken = result?.token
 				DispatchQueue.main.async {

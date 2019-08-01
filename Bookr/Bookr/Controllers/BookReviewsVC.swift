@@ -12,6 +12,7 @@ class BookReviewsVC: UIViewController {
 	
 	//MARK: - IBOutlets
 	
+	@IBOutlet weak var tableView: UITableView!
 	
 	//MARK: - Properties
 	
@@ -24,6 +25,7 @@ class BookReviewsVC: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		tableView.dataSource = self
 		loadBook()
 	}
 	
@@ -47,4 +49,14 @@ class BookReviewsVC: UIViewController {
 		}
 	}
 
+}
+
+extension BookReviewsVC: UITableViewDataSource {
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return 6
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		return UITableViewCell()
+	}
 }

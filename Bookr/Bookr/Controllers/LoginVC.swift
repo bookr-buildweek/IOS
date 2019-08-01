@@ -44,7 +44,9 @@ class LoginVC: UIViewController {
 		
 		NetworkManager.shared.login(credentials: login) { (results, error) in
 			if let error = error {
-				self.presentInfoAlert(title: "Error", message: error)
+				DispatchQueue.main.async {
+					self.presentInfoAlert(title: "Error", message: error)
+				}
 			} else if let results = results {
 				print(results)
 				SettingsController.shared.isSaveCredentials = true
