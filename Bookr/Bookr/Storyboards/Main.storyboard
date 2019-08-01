@@ -247,13 +247,13 @@
                                                             <rect key="frame" x="8" y="8" width="398" height="273.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ASg-NF-kdp">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="173.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="48"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="okQ-oZ-pMh" userLabel="Image">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="119.50000000000011" height="173.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="119.5" height="48"/>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Algebra Introductory and Intermediate" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFt-Zv-Z0m" userLabel="Title">
-                                                                            <rect key="frame" x="127.5" y="0.0" width="270.5" height="173.5"/>
+                                                                            <rect key="frame" x="127.5" y="0.0" width="270.5" height="48"/>
                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -263,20 +263,20 @@
                                                                         <constraint firstItem="okQ-oZ-pMh" firstAttribute="width" secondItem="ASg-NF-kdp" secondAttribute="width" multiplier="0.3" id="0cQ-oX-AsD"/>
                                                                     </constraints>
                                                                 </stackView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Richard N. Aufmann, Vernon C. Barker, Joanne S. Lockwood" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MB9-l9-YvB" userLabel="Author">
-                                                                    <rect key="frame" x="0.0" y="178.5" width="398" height="36"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Richard N. Aufmann, Vernon C. Barker, Joanne S. Lockwood" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MB9-l9-YvB" userLabel="Author">
+                                                                    <rect key="frame" x="0.0" y="53" width="398" height="176.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Houghton Mifflin Company 2007" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAX-RV-O2a" userLabel="Company">
-                                                                    <rect key="frame" x="0.0" y="219.5" width="398" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Houghton Mifflin Company 2007" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAX-RV-O2a" userLabel="Company">
+                                                                    <rect key="frame" x="0.0" y="234.5" width="398" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2StarRating" translatesAutoresizingMaskIntoConstraints="NO" id="Ni2-kE-xkz">
-                                                                    <rect key="frame" x="0.0" y="242.5" width="398" height="31"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="2StarRating" translatesAutoresizingMaskIntoConstraints="NO" id="Ni2-kE-xkz">
+                                                                    <rect key="frame" x="0.0" y="257.5" width="398" height="16"/>
                                                                 </imageView>
                                                             </subviews>
                                                         </stackView>
@@ -511,7 +511,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1155"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="nZc-yV-Fpy">
-                                                        <rect key="frame" x="8" y="8" width="398" height="476"/>
+                                                        <rect key="frame" x="8" y="8" width="398" height="461"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Algebra Introductory and Intermediate" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FD-Jh-6Eo" userLabel="Title">
                                                                 <rect key="frame" x="21" y="0.0" width="356" height="72"/>
@@ -520,16 +520,16 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5StarRating" translatesAutoresizingMaskIntoConstraints="NO" id="1Xm-BE-TUA">
-                                                                <rect key="frame" x="120" y="85" width="158" height="31"/>
+                                                                <rect key="frame" x="191" y="85" width="16" height="16"/>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="rPC-yE-wlg" userLabel="Image">
-                                                                <rect key="frame" x="0.0" y="129" width="398.00000000000011" height="300"/>
+                                                                <rect key="frame" x="191" y="114" width="16" height="300"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="300" id="Vdz-8X-GSO"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UuZ-Bz-nuK" userLabel="Add a review">
-                                                                <rect key="frame" x="134" y="442" width="130" height="34"/>
+                                                                <rect key="frame" x="134" y="427" width="130" height="34"/>
                                                                 <color key="backgroundColor" red="0.18229476789999999" green="0.47173935169999998" blue="0.1269543853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                                 <state key="normal" title="ADD A REVIEW">
@@ -539,7 +539,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="230" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RfG-hl-ARg">
-                                                        <rect key="frame" x="0.0" y="484" width="414" height="233"/>
+                                                        <rect key="frame" x="0.0" y="469" width="414" height="248"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <prototypes>
                                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCell" rowHeight="290" id="gm6-RG-pEQ" customClass="BookCell" customModule="Bookr" customModuleProvider="target">
@@ -553,13 +553,13 @@
                                                                             <rect key="frame" x="20" y="11" width="374" height="268"/>
                                                                             <subviews>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="52b-0d-lt6">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="168"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
                                                                                     <subviews>
                                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="sAg-At-pXd" userLabel="Image">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="112.00000000000011" height="168"/>
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="112" height="48"/>
                                                                                         </imageView>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Algebra Introductory and Intermediate" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJs-gR-VD3" userLabel="Title">
-                                                                                            <rect key="frame" x="120" y="0.0" width="254" height="168"/>
+                                                                                            <rect key="frame" x="120" y="0.0" width="254" height="48"/>
                                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                                             <nil key="textColor"/>
                                                                                             <nil key="highlightedColor"/>
@@ -569,20 +569,20 @@
                                                                                         <constraint firstItem="sAg-At-pXd" firstAttribute="width" secondItem="52b-0d-lt6" secondAttribute="width" multiplier="0.3" id="26b-Y9-9eE"/>
                                                                                     </constraints>
                                                                                 </stackView>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Richard N. Aufmann, Vernon C. Barker, Joanne S. Lockwood" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg9-Tz-5lv" userLabel="Author">
-                                                                                    <rect key="frame" x="0.0" y="173" width="374" height="36"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Richard N. Aufmann, Vernon C. Barker, Joanne S. Lockwood" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg9-Tz-5lv" userLabel="Author">
+                                                                                    <rect key="frame" x="0.0" y="53" width="374" height="171"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Houghton Mifflin Company 2007" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEg-9L-6lB" userLabel="Company">
-                                                                                    <rect key="frame" x="0.0" y="214" width="374" height="18"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Houghton Mifflin Company 2007" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEg-9L-6lB" userLabel="Company">
+                                                                                    <rect key="frame" x="0.0" y="229" width="374" height="18"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2StarRating" translatesAutoresizingMaskIntoConstraints="NO" id="pfF-sx-JHd">
-                                                                                    <rect key="frame" x="0.0" y="237" width="374" height="31"/>
+                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="2StarRating" translatesAutoresizingMaskIntoConstraints="NO" id="pfF-sx-JHd">
+                                                                                    <rect key="frame" x="0.0" y="252" width="374" height="16"/>
                                                                                 </imageView>
                                                                             </subviews>
                                                                         </stackView>
