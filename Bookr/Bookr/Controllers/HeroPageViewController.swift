@@ -23,9 +23,9 @@ class HeroPageViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-//		loginBtn.isHidden = true
-//		startBtn.isHidden = true
-		print("Hidding btns")
+		loginBtn.isHidden = true
+		startBtn.isHidden = true
+		
 		checkForLogin()
 	}
 	
@@ -40,9 +40,8 @@ class HeroPageViewController: UIViewController {
 				self.performSegue(withIdentifier: "MainToProfileShowSegue", sender: nil)
 			}
 		} else {
-//			loginBtn.isHidden = false
-//			startBtn.isHidden = false
-			print("Showing btns")
+			loginBtn.isHidden = false
+			startBtn.isHidden = false
 		}
 	}
 }
