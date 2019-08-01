@@ -23,6 +23,9 @@
 		B506A54A22EF689E00061FCF /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B506A54922EF689E00061FCF /* JSONParameterEncoder.swift */; };
 		B53C48E522F33BB1002FCFBC /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C48E422F33BB1002FCFBC /* BookCell.swift */; };
 		B53C48E722F35A82002FCFBC /* BookReviewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C48E622F35A82002FCFBC /* BookReviewsVC.swift */; };
+		B53C48E922F38A31002FCFBC /* BookDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C48E822F38A31002FCFBC /* BookDetailsCell.swift */; };
+		B53C48EB22F38A44002FCFBC /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C48EA22F38A44002FCFBC /* ReviewCell.swift */; };
+		B53C48ED22F3A133002FCFBC /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C48EC22F3A133002FCFBC /* CustomButton.swift */; };
 		B5FE506622EF69D400EB6C6D /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE506522EF69D400EB6C6D /* NetworkRouter.swift */; };
 		B5FE506822EF7EB100EB6C6D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE506722EF7EB100EB6C6D /* Router.swift */; };
 		B5FE506A22EF883700EB6C6D /* BookrRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE506922EF883700EB6C6D /* BookrRouter.swift */; };
@@ -46,10 +49,7 @@
 		B5FE509622F1665300EB6C6D /* BookResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE509022F1665300EB6C6D /* BookResultsVC.swift */; };
 		B5FE509822F1665300EB6C6D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE509222F1665300EB6C6D /* HomeVC.swift */; };
 		B5FE509A22F166B100EB6C6D /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE509922F166B100EB6C6D /* FilterCollectionViewCell.swift */; };
-		B5FE509D22F166C200EB6C6D /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE509B22F166C200EB6C6D /* Book.swift */; };
-		B5FE509E22F166C200EB6C6D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE509C22F166C200EB6C6D /* Profile.swift */; };
 		B5FE50A122F166FB00EB6C6D /* HeroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE509F22F166FB00EB6C6D /* HeroPageViewController.swift */; };
-		B5FE50A222F166FB00EB6C6D /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE50A022F166FB00EB6C6D /* ProfileController.swift */; };
 		B5FE50A522F217BF00EB6C6D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE50A422F217BF00EB6C6D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +72,9 @@
 		B506A54922EF689E00061FCF /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
 		B53C48E422F33BB1002FCFBC /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		B53C48E622F35A82002FCFBC /* BookReviewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewsVC.swift; sourceTree = "<group>"; };
+		B53C48E822F38A31002FCFBC /* BookDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsCell.swift; sourceTree = "<group>"; };
+		B53C48EA22F38A44002FCFBC /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		B53C48EC22F3A133002FCFBC /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B5FE506522EF69D400EB6C6D /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		B5FE506722EF7EB100EB6C6D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B5FE506922EF883700EB6C6D /* BookrRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookrRouter.swift; sourceTree = "<group>"; };
@@ -95,10 +98,7 @@
 		B5FE509022F1665300EB6C6D /* BookResultsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookResultsVC.swift; sourceTree = "<group>"; };
 		B5FE509222F1665300EB6C6D /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B5FE509922F166B100EB6C6D /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
-		B5FE509B22F166C200EB6C6D /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		B5FE509C22F166C200EB6C6D /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		B5FE509F22F166FB00EB6C6D /* HeroPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroPageViewController.swift; sourceTree = "<group>"; };
-		B5FE50A022F166FB00EB6C6D /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		B5FE50A422F217BF00EB6C6D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C0A249F808167594ECD98EAE /* Pods_Bookr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20A1D4ACE7271809E510BE5 /* Pods-Bookr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bookr/Pods-Bookr.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,8 +163,6 @@
 		B506A52C22EF5D5800061FCF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B5FE509B22F166C200EB6C6D /* Book.swift */,
-				B5FE509C22F166C200EB6C6D /* Profile.swift */,
 				B5FE506B22EFAF8200EB6C6D /* User.swift */,
 				B5FE506F22EFBC1100EB6C6D /* Login.swift */,
 				B5FE507322EFC74700EB6C6D /* LoginRequest.swift */,
@@ -182,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				B5FE509F22F166FB00EB6C6D /* HeroPageViewController.swift */,
-				B5FE50A022F166FB00EB6C6D /* ProfileController.swift */,
 				B5FE509022F1665300EB6C6D /* BookResultsVC.swift */,
 				B53C48E622F35A82002FCFBC /* BookReviewsVC.swift */,
 				B5FE508F22F1665300EB6C6D /* SignUpVC.swift */,
@@ -197,7 +194,10 @@
 			isa = PBXGroup;
 			children = (
 				B5FE509922F166B100EB6C6D /* FilterCollectionViewCell.swift */,
+				B53C48EA22F38A44002FCFBC /* ReviewCell.swift */,
 				B53C48E422F33BB1002FCFBC /* BookCell.swift */,
+				B53C48E822F38A31002FCFBC /* BookDetailsCell.swift */,
+				B53C48EC22F3A133002FCFBC /* CustomButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -406,6 +406,7 @@
 				B506A50C22EF58A500061FCF /* AppDelegate.swift in Sources */,
 				B506A54422EF62ED00061FCF /* ParameterEncoding.swift in Sources */,
 				B5FE508622F0EC9900EB6C6D /* BookRequest.swift in Sources */,
+				B53C48E922F38A31002FCFBC /* BookDetailsCell.swift in Sources */,
 				B5FE509522F1665300EB6C6D /* SignUpVC.swift in Sources */,
 				B5FE508222F0E38A00EB6C6D /* BookWURL.swift in Sources */,
 				B5FE507022EFBC1100EB6C6D /* Login.swift in Sources */,
@@ -414,14 +415,13 @@
 				B5FE507222EFC15E00EB6C6D /* TestVC.swift in Sources */,
 				B5FE506C22EFAF8200EB6C6D /* User.swift in Sources */,
 				B5FE507622F0774300EB6C6D /* RegisterRequest.swift in Sources */,
-				B5FE50A222F166FB00EB6C6D /* ProfileController.swift in Sources */,
 				B506A53A22EF60BD00061FCF /* EndPointType.swift in Sources */,
+				B53C48ED22F3A133002FCFBC /* CustomButton.swift in Sources */,
+				B53C48EB22F38A44002FCFBC /* ReviewCell.swift in Sources */,
 				B5FE508422F0E56800EB6C6D /* ReviewRequest.swift in Sources */,
 				B53C48E722F35A82002FCFBC /* BookReviewsVC.swift in Sources */,
-				B5FE509D22F166C200EB6C6D /* Book.swift in Sources */,
 				B5FE50A122F166FB00EB6C6D /* HeroPageViewController.swift in Sources */,
 				B5FE507A22F0A6F100EB6C6D /* Review.swift in Sources */,
-				B5FE509E22F166C200EB6C6D /* Profile.swift in Sources */,
 				B506A54022EF619D00061FCF /* HTTPMethod.swift in Sources */,
 				B5FE507C22F0AA0500EB6C6D /* SettingsController.swift in Sources */,
 				B5FE509A22F166B100EB6C6D /* FilterCollectionViewCell.swift in Sources */,

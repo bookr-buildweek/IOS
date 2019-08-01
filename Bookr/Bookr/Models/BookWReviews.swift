@@ -19,4 +19,5 @@ struct BookWReviews: Codable {
 	let description: String
 	let category: String
 	let reviews: [Review]
+	let averageRatings: Int
 }

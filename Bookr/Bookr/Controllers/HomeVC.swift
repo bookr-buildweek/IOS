@@ -16,7 +16,7 @@ class HomeVC: UIViewController {
 	
 	//MARK: - Properties
 	
-	let categories = ["art", "ball", "languageArts", "history", "mathematics", "science"]
+	let categories = ["art", "ball", "languageArts", "history", "mathematics", "science", "programming"]
 	
 	//MARK: - Life Cycle
 	

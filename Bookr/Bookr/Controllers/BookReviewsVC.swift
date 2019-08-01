@@ -31,6 +31,9 @@ class BookReviewsVC: UIViewController {
 	
 	//MARK: - IBActions
 	
+	@IBAction func backBtn(_ sender: Any) {
+		navigationController?.popViewController(animated: true)
+	}
 	
 	//MARK: - Helpers
 	
@@ -45,6 +48,9 @@ class BookReviewsVC: UIViewController {
 			} else if let result = result {
 				self.book = result
 				self.reviews = result.reviews.sorted(by: {$0.id < $1.id})
+				DispatchQueue.main.async {
+					self.tableView.reloadData()
+				}
 			}
 		}
 	}
@@ -52,11 +58,32 @@ class BookReviewsVC: UIViewController {
 }
 
 extension BookReviewsVC: UITableViewDataSource {
+	func numberOfSections(in tableView: UITableView) -> Int {
+		return 2
+	}
+	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 6
+		switch section {
+		case 0:
+			return 1
+		case 1:
+			return reviews.count
+		default:
+			return 0
+		}
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		if indexPath.section == 0 {
+			guard let rating = book?.averageRatings, let book = bookReference,
+				let cell = tableView.dequeueReusableCell(withIdentifier: "BookDetailsCell") as? BookDetailsCell else { return UITableViewCell() }
+			cell.book = (book.title, rating, book.url)
+			return cell
+		} else if indexPath.section == 1 {
+			guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell") as? ReviewCell else { return UITableViewCell() }
+			cell.review = reviews[indexPath.row]
+			return cell
+		}
 		return UITableViewCell()
 	}
 }
