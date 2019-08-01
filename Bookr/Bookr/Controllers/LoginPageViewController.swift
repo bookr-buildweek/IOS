@@ -47,6 +47,7 @@ class LoginPageViewController: UIViewController {
 				self.presentInfoAlert(title: "Error", message: error)
 			} else if let results = results {
 				print(results)
+				SettingsController.shared.isSaveCredentials = true
 				SettingsController.shared.persist(credentials: login)
 				SettingsController.shared.userToken = results.token
 				DispatchQueue.main.async {

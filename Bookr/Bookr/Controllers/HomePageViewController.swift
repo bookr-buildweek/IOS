@@ -16,33 +16,23 @@ class HomePageViewController: UIViewController {
 	
 	var bookController = BookController()
 	var book: Book?
-//
-//	@IBOutlet weak var collectionView: UICollectionView!
+
+	@IBOutlet weak var collectionView: UICollectionView!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
+		configCollectionView()
 	}
-
-//
-//	func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-//		//#warning Incomplete method implementation -- Return the number of sections
-//		return 2
-//	}
-//
-//	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//		//#warning Incomplete method implementation -- Return the number of items in the section
-//		return 3
-//
-//	}
-//
-//	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCell", for: indexPath) as! UICollectionViewCell
-//
-//		return cell
-//	}
 	
-
+	@IBAction func profileBtn(_ sender: Any) {
+		SettingsController.shared.isSaveCredentials = false
+	}
+	
+	private func configCollectionView() {
+		collectionView.dataSource = self
+		collectionView.delegate = self
+	}
 }
 
 extension HomePageViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -52,6 +42,7 @@ extension HomePageViewController: UICollectionViewDelegate, UICollectionViewData
 		let images = names.compactMap { UIImage(named: $0) }
 		return images
 	}
+	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return filterImages.count
 	}

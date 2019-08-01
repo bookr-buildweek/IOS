@@ -31,6 +31,9 @@ class HeroPageViewController: UIViewController {
 	
 	//MARK: - IBActions
 	
+	@IBAction func unwindToHeroPage(_ sender: UIStoryboardSegue) {
+		
+	}
 	
 	//MARK: - Helpers
 

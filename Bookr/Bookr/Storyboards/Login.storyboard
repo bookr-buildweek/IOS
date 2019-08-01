@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fTV-fP-eZh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UtS-89-Zh6">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -138,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="94"/>
+            <point key="canvasLocation" x="473.91304347826093" y="93.75"/>
         </scene>
         <!--Create Account-->
         <scene sceneID="4dq-1n-Eaa">
@@ -330,7 +330,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1I3-Cx-T1F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="927"/>
+            <point key="canvasLocation" x="473.91304347826093" y="926.78571428571422"/>
         </scene>
         <!--Hero Page View Controller-->
         <scene sceneID="1k5-Pq-LX3">
@@ -454,6 +454,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cFk-fI-e2V"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zI8-jc-c3k"/>
                     <connections>
                         <outlet property="loginBtn" destination="6Sq-mF-RmV" id="kQb-WS-Fvs"/>
                         <outlet property="startBtn" destination="xUN-mw-lKh" id="YDb-Qz-PAN"/>
@@ -462,7 +463,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIY-ld-bSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1548" y="512"/>
+            <point key="canvasLocation" x="-639.13043478260875" y="511.60714285714283"/>
         </scene>
         <!--Main-->
         <scene sceneID="9v5-YR-Bpa">
@@ -470,13 +471,30 @@
                 <viewControllerPlaceholder storyboardName="Main" id="nHM-9H-ZyD" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cit-z4-9d3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="219" y="512"/>
+            <point key="canvasLocation" x="1128.985507246377" y="511.60714285714283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cgh-d8-sMI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="UtS-89-Zh6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Sa-Bx-o0t">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fTV-fP-eZh" kind="relationship" relationship="rootViewController" id="OYE-fS-AWp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhk-Op-0JA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1549.2753623188407" y="511.60714285714283"/>
         </scene>
     </scenes>
     <resources>
         <image name="Image" width="360" height="254"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Uvn-K8-zij"/>
+        <segue reference="eJ9-5N-y33"/>
     </inferredMetricsTieBreakers>
 </document>
