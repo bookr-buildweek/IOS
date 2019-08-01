@@ -40,7 +40,7 @@ class HeroPageViewController: UIViewController {
 	private func checkForLogin() {
 		if SettingsController.shared.isSaveCredentials {
 			DispatchQueue.main.asyncAfter(deadline: .now()+1) {
-				self.performSegue(withIdentifier: "MainToProfileShowSegue", sender: nil)
+				self.performSegue(withIdentifier: "ShowMainSegue", sender: nil)
 			}
 		} else {
 			loginBtn.isHidden = false
