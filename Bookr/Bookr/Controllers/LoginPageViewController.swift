@@ -28,20 +28,34 @@ class LoginPageViewController: UIViewController {
 	
 	//MARK: - IBActions
 	
+	@IBAction func googleSignInBtn(_ sender: Any) {
+		
+	}
+	
+	@IBAction func facebookSignInBtn(_ sender: Any) {
+		
+	}
+	
 	@IBAction func signInButton(_ sender: UIButton) {
-		guard let email = emailTextField.optionalText, let password = passwordTextField.optionalText else { return }
+		guard let email = fillIn(text: emailTextField, alertMessage: "Email"),
+			let password = fillIn(text: passwordTextField, alertMessage: "Password")
+			else { return }
 		let login = LoginRequest(email: email, password: password)
 		
 		NetworkManager.shared.login(credentials: login) { (results, error) in
 			if let error = error {
-				print(error)
+				self.presentInfoAlert(title: "Error", message: error)
 			} else if let results = results {
 				print(results)
 				SettingsController.shared.persist(credentials: login)
 				SettingsController.shared.userToken = results.token
-				#warning("Create segue to Profile")
+				self.performSegue(withIdentifier: "ShowProfileSegue", sender: nil)
 			}
 		}
+	}
+	
+	@IBAction func createAccountBtn(_ sender: Any) {
+		#warning("link to register screen without creating an infinite loop")
 	}
 	
 	//MARK: - Helpers

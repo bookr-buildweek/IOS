@@ -33,7 +33,6 @@
 		B5FE507822F0783C00EB6C6D /* UserAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507722F0783C00EB6C6D /* UserAPIManager.swift */; };
 		B5FE507A22F0A6F100EB6C6D /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507922F0A6F100EB6C6D /* Review.swift */; };
 		B5FE507C22F0AA0500EB6C6D /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507B22F0AA0500EB6C6D /* SettingsController.swift */; };
-		B5FE507E22F0BAE900EB6C6D /* AccessKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507D22F0BAE900EB6C6D /* AccessKeys.swift */; };
 		B5FE508022F0E26500EB6C6D /* BookAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE507F22F0E26500EB6C6D /* BookAPIManager.swift */; };
 		B5FE508222F0E38A00EB6C6D /* BookWURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE508122F0E38A00EB6C6D /* BookWURL.swift */; };
 		B5FE508422F0E56800EB6C6D /* ReviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE508322F0E56800EB6C6D /* ReviewRequest.swift */; };
@@ -83,7 +82,6 @@
 		B5FE507722F0783C00EB6C6D /* UserAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIManager.swift; sourceTree = "<group>"; };
 		B5FE507922F0A6F100EB6C6D /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		B5FE507B22F0AA0500EB6C6D /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		B5FE507D22F0BAE900EB6C6D /* AccessKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessKeys.swift; sourceTree = "<group>"; };
 		B5FE507F22F0E26500EB6C6D /* BookAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAPIManager.swift; sourceTree = "<group>"; };
 		B5FE508122F0E38A00EB6C6D /* BookWURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWURL.swift; sourceTree = "<group>"; };
 		B5FE508322F0E56800EB6C6D /* ReviewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequest.swift; sourceTree = "<group>"; };
@@ -270,7 +268,6 @@
 		B5FE50A322F2177300EB6C6D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				B5FE507D22F0BAE900EB6C6D /* AccessKeys.swift */,
 				B5FE50A422F217BF00EB6C6D /* Extensions.swift */,
 				B5FE507B22F0AA0500EB6C6D /* SettingsController.swift */,
 			);
@@ -418,7 +415,6 @@
 				B506A54822EF658300061FCF /* URLParameterEncoder.swift in Sources */,
 				B5FE507222EFC15E00EB6C6D /* TestVC.swift in Sources */,
 				B5FE506C22EFAF8200EB6C6D /* User.swift in Sources */,
-				B5FE507E22F0BAE900EB6C6D /* AccessKeys.swift in Sources */,
 				B5FE507622F0774300EB6C6D /* RegisterRequest.swift in Sources */,
 				B5FE50A222F166FB00EB6C6D /* ProfileController.swift in Sources */,
 				B506A53A22EF60BD00061FCF /* EndPointType.swift in Sources */,

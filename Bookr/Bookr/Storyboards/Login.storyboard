@@ -36,6 +36,9 @@
                                                 <state key="normal" title="Sign in with Google">
                                                     <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="googleSignInBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nNM-hB-WNC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcl-9L-7V9">
                                                 <rect key="frame" x="0.0" y="35.333333333333343" width="331.33333333333331" height="35.333333333333343"/>
@@ -43,6 +46,9 @@
                                                 <state key="normal" title="Sign in with Facebook">
                                                     <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="facebookSignInBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="15R-4b-kKJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -102,6 +108,9 @@
                                         <state key="normal" title="Don't have an account yet?">
                                             <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="createAccountBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJD-nk-tPb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -157,6 +166,9 @@
                                                 <state key="normal" title="Sign in with Google">
                                                     <color key="titleColor" red="0.18229476789999999" green="0.47173935169999998" blue="0.1269543853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="googleSignUpBtn:" destination="nuV-0k-WmB" eventType="touchUpInside" id="ZuM-eu-UsN"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJ3-4X-xOU">
                                                 <rect key="frame" x="0.0" y="35.333333333333314" width="177" height="35.666666666666657"/>
@@ -164,6 +176,9 @@
                                                 <state key="normal" title="Sign in with Facebook">
                                                     <color key="titleColor" red="0.18229476789999999" green="0.47173935169999998" blue="0.1269543853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="FacebookSignUpBtn:" destination="nuV-0k-WmB" eventType="touchUpInside" id="hAD-Go-Yee"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -273,15 +288,19 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="createBtn:" destination="nuV-0k-WmB" eventType="touchUpInside" id="iFI-fJ-OLW"/>
                                             <action selector="signInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PkH-GI-XIH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcZ-jW-gTr">
-                                        <rect key="frame" x="32.333333333333343" y="599.66666666666674" width="219" height="55"/>
+                                        <rect key="frame" x="37.666666666666686" y="599.66666666666674" width="208" height="55"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
-                                        <state key="normal" title="Don't have an account yet?">
+                                        <state key="normal" title="Already have an account?">
                                             <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInBtn:" destination="nuV-0k-WmB" eventType="touchUpInside" id="GvK-bu-JvL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -301,6 +320,11 @@
                         <viewLayoutGuide key="safeArea" id="ckr-KS-C4g"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="l7Z-6u-a57" id="DWI-la-wd5"/>
+                        <outlet property="firstNameTextField" destination="jdE-nN-Hu3" id="vFf-ln-spy"/>
+                        <outlet property="lastNameTextField" destination="WHQ-Mm-ocP" id="Yew-cc-c0C"/>
+                        <outlet property="passwordConfirmTextField" destination="vHs-0O-OXT" id="4Wi-7c-xGm"/>
+                        <outlet property="passwordTextField" destination="42z-cc-BGu" id="EhF-N2-2lw"/>
                         <segue destination="nHM-9H-ZyD" kind="show" identifier="ShowProfileSegue" id="Uvn-K8-zij"/>
                     </connections>
                 </viewController>
@@ -453,6 +477,6 @@
         <image name="Image" width="360" height="254"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eJ9-5N-y33"/>
+        <segue reference="Uvn-K8-zij"/>
     </inferredMetricsTieBreakers>
 </document>

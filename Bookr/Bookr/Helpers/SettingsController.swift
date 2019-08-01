@@ -23,14 +23,14 @@ class SettingsController {
 	
 	var userToken: String? {
 		get {
-			return keychain[AccessKeys.TokenKey]
+			return keychain[tokenKey]
 		}
 		set {
 			guard let newToken = newValue else {
-				keychain[AccessKeys.TokenKey] = nil
+				keychain[tokenKey] = nil
 				return
 			}
-			keychain[AccessKeys.TokenKey] = newToken
+			keychain[tokenKey] = newToken
 		}
 	}
 	
