@@ -5,7 +5,7 @@ DEPENDENCIES:
   - KeychainAccess
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - KeychainAccess
 
 SPEC CHECKSUMS:
@@ -13,4 +13,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 17753f72064d80c9dcdfc4be5c7adb59b02b3cd3
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.7.5

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -51,6 +51,7 @@
 		B5FE509E22F166C200EB6C6D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE509C22F166C200EB6C6D /* Profile.swift */; };
 		B5FE50A122F166FB00EB6C6D /* HeroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE509F22F166FB00EB6C6D /* HeroPageViewController.swift */; };
 		B5FE50A222F166FB00EB6C6D /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FE50A022F166FB00EB6C6D /* ProfileController.swift */; };
+		F5F6E47B22F23EEB00B74F49 /* BooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F6E47A22F23EEB00B74F49 /* BooksTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		B5FE50A022F166FB00EB6C6D /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		C0A249F808167594ECD98EAE /* Pods_Bookr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20A1D4ACE7271809E510BE5 /* Pods-Bookr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bookr/Pods-Bookr.release.xcconfig"; sourceTree = "<group>"; };
+		F5F6E47A22F23EEB00B74F49 /* BooksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				B5FE509922F166B100EB6C6D /* FilterCollectionViewCell.swift */,
+				F5F6E47A22F23EEB00B74F49 /* BooksTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -368,17 +371,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Bookr/Pods-Bookr-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bookr/Pods-Bookr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bookr/Pods-Bookr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bookr/Pods-Bookr-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bookr/Pods-Bookr-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -424,6 +426,7 @@
 				B5FE506622EF69D400EB6C6D /* NetworkRouter.swift in Sources */,
 				B5FE509822F1665300EB6C6D /* HomePageViewController.swift in Sources */,
 				B5FE508A22F14BF100EB6C6D /* ReviewAPIManager.swift in Sources */,
+				F5F6E47B22F23EEB00B74F49 /* BooksTableViewCell.swift in Sources */,
 				B5FE507422EFC74700EB6C6D /* LoginRequest.swift in Sources */,
 				B5FE509622F1665300EB6C6D /* BookResultsTableViewController.swift in Sources */,
 			);
