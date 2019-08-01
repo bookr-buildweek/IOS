@@ -133,7 +133,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="yGV-xF-m07" id="6Jo-kI-IBY"/>
                         <outlet property="passwordTextField" destination="0pZ-hr-gDz" id="R3e-EC-7wY"/>
-                        <segue destination="nHM-9H-ZyD" kind="show" identifier="ShowProfileSegue" id="CXz-va-3ob"/>
+                        <segue destination="nHM-9H-ZyD" kind="show" identifier="ShowMainSegue" id="CXz-va-3ob"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -325,7 +325,7 @@
                         <outlet property="lastNameTextField" destination="WHQ-Mm-ocP" id="Yew-cc-c0C"/>
                         <outlet property="passwordConfirmTextField" destination="vHs-0O-OXT" id="4Wi-7c-xGm"/>
                         <outlet property="passwordTextField" destination="42z-cc-BGu" id="EhF-N2-2lw"/>
-                        <segue destination="nHM-9H-ZyD" kind="show" identifier="ShowProfileSegue" id="Uvn-K8-zij"/>
+                        <segue destination="nHM-9H-ZyD" kind="show" identifier="ShowMainSegue" id="Uvn-K8-zij"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1I3-Cx-T1F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -457,17 +457,17 @@
                     <connections>
                         <outlet property="loginBtn" destination="6Sq-mF-RmV" id="kQb-WS-Fvs"/>
                         <outlet property="startBtn" destination="xUN-mw-lKh" id="YDb-Qz-PAN"/>
-                        <segue destination="nHM-9H-ZyD" kind="show" identifier="ShowProfileSegue" id="eJ9-5N-y33"/>
+                        <segue destination="nHM-9H-ZyD" kind="show" identifier="ShowMainSegue" id="eJ9-5N-y33"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIY-ld-bSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1548" y="512"/>
         </scene>
-        <!--Profile-->
+        <!--Main-->
         <scene sceneID="9v5-YR-Bpa">
             <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="nHM-9H-ZyD" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" id="nHM-9H-ZyD" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cit-z4-9d3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="219" y="512"/>

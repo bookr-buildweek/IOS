@@ -65,7 +65,7 @@ class CreatePageViewController: UIViewController {
 				SettingsController.shared.persist(credentials: login)
 				SettingsController.shared.userToken = result?.token
 				DispatchQueue.main.async {
-					self.performSegue(withIdentifier: "ShowProfileSegue", sender: nil)
+					self.performSegue(withIdentifier: "ShowMainSegue", sender: nil)
 				}
 			}
 		}

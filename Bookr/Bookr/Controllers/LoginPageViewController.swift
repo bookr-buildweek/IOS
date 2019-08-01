@@ -50,7 +50,7 @@ class LoginPageViewController: UIViewController {
 				SettingsController.shared.persist(credentials: login)
 				SettingsController.shared.userToken = results.token
 				DispatchQueue.main.async {
-					self.performSegue(withIdentifier: "ShowProfileSegue", sender: nil)
+					self.performSegue(withIdentifier: "ShowMainSegue", sender: nil)
 				}
 			}
 		}
