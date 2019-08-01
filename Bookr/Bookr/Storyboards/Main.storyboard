@@ -202,17 +202,17 @@
                                         <rect key="frame" x="0.0" y="116.5" width="414" height="89.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="enX-XP-hDL">
-                                                <rect key="frame" x="8" y="8" width="398" height="73.5"/>
+                                                <rect key="frame" x="8" y="8" width="398" height="50.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geo-Xp-rbo">
-                                                        <rect key="frame" x="10" y="0.0" width="378" height="53"/>
+                                                        <rect key="frame" x="10" y="0.0" width="378" height="30"/>
                                                         <state key="normal" title="back to homepage"/>
                                                         <connections>
                                                             <action selector="homePageBtn:" destination="HGf-9x-FH9" eventType="touchUpInside" id="euC-lV-9iv"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="filtered results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnS-jH-4Jb">
-                                                        <rect key="frame" x="0.0" y="53" width="398" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="30" width="398" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                                         <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -481,13 +481,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exH-3L-V9l">
-                                        <rect key="frame" x="0.0" y="121" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="121" width="414" height="93"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rNy-5M-oFH">
-                                                <rect key="frame" x="8" y="8" width="398" height="34"/>
+                                                <rect key="frame" x="8" y="8" width="398" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQB-kO-TXb">
-                                                        <rect key="frame" x="10" y="0.0" width="378" height="34"/>
+                                                        <rect key="frame" x="10" y="0.0" width="378" height="30"/>
                                                         <state key="normal" title="back to search results"/>
                                                     </button>
                                                 </subviews>
@@ -505,7 +505,7 @@
                                         </constraints>
                                     </view>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="Z6X-nr-y1H">
-                                        <rect key="frame" x="0.0" y="171" width="414" height="760"/>
+                                        <rect key="frame" x="0.0" y="214" width="414" height="717"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A4T-Wz-2jM">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1155"/>
@@ -539,7 +539,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="230" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RfG-hl-ARg">
-                                                        <rect key="frame" x="0.0" y="484" width="414" height="276"/>
+                                                        <rect key="frame" x="0.0" y="484" width="414" height="233"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <prototypes>
                                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCell" rowHeight="290" id="gm6-RG-pEQ" customClass="BookCell" customModule="Bookr" customModuleProvider="target">
