@@ -60,6 +60,13 @@ class CreatePageViewController: UIViewController {
 		NetworkManager.shared.register(newUser: newUser) { (result, error) in
 			if let error = error {
 				self.presentInfoAlert(title: "Error", message: error)
+			} else {
+				let login = LoginRequest(email: newUser.email, password: newUser.password)
+				SettingsController.shared.persist(credentials: login)
+				SettingsController.shared.userToken = result?.token
+				DispatchQueue.main.async {
+					self.performSegue(withIdentifier: "ShowProfileSegue", sender: nil)
+				}
 			}
 		}
 		
