@@ -34,6 +34,8 @@ class SettingsController {
 		}
 	}
 	
+	private(set) var loggedInUser: User?
+	
 	private(set) var userCredentials: LoginRequest? {
 		get {
 			guard let email = keychain[userEmailKey], let password = keychain[userPasswordKey] else { return nil }
@@ -78,5 +80,11 @@ class SettingsController {
 		if isSaveCredentials {
 			userCredentials = credentials
 		}
+	}
+	
+	func loginProcedure(_ login: Login) {
+		isSaveCredentials = true
+		loggedInUser = login.user
+		userToken = login.token
 	}
 }

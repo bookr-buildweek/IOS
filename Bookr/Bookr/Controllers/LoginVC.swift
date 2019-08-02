@@ -42,16 +42,14 @@ class LoginVC: UIViewController {
 			else { return }
 		let login = LoginRequest(email: email, password: password)
 		
-		NetworkManager.shared.login(credentials: login) { (results, error) in
+		NetworkManager.shared.login(credentials: login) { (result, error) in
 			if let error = error {
 				DispatchQueue.main.async {
 					self.presentInfoAlert(title: "Error", message: error)
 				}
-			} else if let results = results {
-				print(results)
-				SettingsController.shared.isSaveCredentials = true
+			} else if let result = result {
+				SettingsController.shared.loginProcedure(result)
 				SettingsController.shared.persist(credentials: login)
-				SettingsController.shared.userToken = results.token
 				DispatchQueue.main.async {
 					self.performSegue(withIdentifier: "ShowMainSegue", sender: nil)
 				}
