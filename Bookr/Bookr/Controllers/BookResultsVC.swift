@@ -28,6 +28,19 @@ class BookResultsVC: UIViewController {
 		loadBooks()
 	}
 	
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		
+		loadBooks()
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if let bookReviewsVC = segue.destination as? BookReviewsVC {
+			guard let indexPath = tableView.indexPathForSelectedRow else { return }
+			bookReviewsVC.bookReference = bookResults[indexPath.row]
+		}
+	}
+	
 	//MARK: - IBActions
 	
 	@IBAction func profileBtn(_ sender: Any) {

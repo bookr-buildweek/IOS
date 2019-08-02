@@ -35,6 +35,10 @@ extension UIViewController {
 }
 
 extension UIImageView {
+	func setStarRating(of stars: Int) {
+		self.image = UIImage(named: "\(stars)StarRating")
+	}
+	
 	func load(url: URL) {
 		DispatchQueue.global().async { [weak self] in
 			if let data = try? Data(contentsOf: url) {
