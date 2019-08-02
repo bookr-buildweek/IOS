@@ -337,7 +337,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="dwi-C0-nTr">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="dwi-C0-nTr">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zd0-r8-nWM">
@@ -389,13 +389,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="204.33333333333334"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOKR :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqv-ZK-2cm">
-                                                <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="143"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="110"/>
                                                 <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="70"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="your source for all things textbook" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ji-rq-Oi0">
-                                                <rect key="frame" x="18.666666666666657" y="143.00000000000003" width="335.33333333333337" height="61.333333333333343"/>
+                                                <rect key="frame" x="18.666666666666657" y="110.00000000000003" width="335.33333333333337" height="94.333333333333343"/>
                                                 <fontDescription key="fontDescription" name="Charter-Italic" family="Charter" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -485,10 +485,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="360" height="254"/>
+        <image name="background" width="360" height="254"/>
         <image name="logo" width="61" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Uvn-K8-zij"/>
+        <segue reference="eJ9-5N-y33"/>
     </inferredMetricsTieBreakers>
 </document>

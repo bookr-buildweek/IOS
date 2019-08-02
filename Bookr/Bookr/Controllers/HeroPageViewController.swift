@@ -39,8 +39,22 @@ class HeroPageViewController: UIViewController {
 
 	private func checkForLogin() {
 		if SettingsController.shared.isSaveCredentials {
-			DispatchQueue.main.asyncAfter(deadline: .now()+1) {
-				self.performSegue(withIdentifier: "ShowMainSegue", sender: nil)
+			guard let credentials = SettingsController.shared.userCredentials else { return }
+			NetworkManager.shared.login(credentials: credentials) { (result, error) in
+				if let error = error {
+					SettingsController.shared.isSaveCredentials = false
+					DispatchQueue.main.async {
+						self.presentInfoAlert(title: "Login Error", message: error)
+					}
+					self.loginBtn.isHidden = false
+					self.startBtn.isHidden = false
+				} else if let result = result {
+					SettingsController.shared.userToken = result.token
+					print("token updated")
+					DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+						self.performSegue(withIdentifier: "ShowMainSegue", sender: nil)
+					}
+				}
 			}
 		} else {
 			loginBtn.isHidden = false

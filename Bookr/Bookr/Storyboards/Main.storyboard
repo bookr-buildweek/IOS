@@ -21,7 +21,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jai-LU-cAD">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="C6Y-vZ-qEC">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="C6Y-vZ-qEC">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="313.5"/>
                                     </imageView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AZ0-mj-BJ6">
@@ -288,6 +288,7 @@
                                                         <constraint firstItem="UsA-0Y-UY0" firstAttribute="top" secondItem="UtV-06-hMc" secondAttribute="topMargin" id="rLd-bv-Ijd"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.99276381731033325" green="0.96662241220474243" blue="0.900615394115448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <outlet property="authorLbl" destination="MB9-l9-YvB" id="B7a-Tp-Mb0"/>
                                                     <outlet property="coverImgView" destination="okQ-oZ-pMh" id="yw4-sr-zMb"/>
@@ -794,8 +795,8 @@
         <image name="2StarRating" width="158" height="31"/>
         <image name="3StarRating" width="158" height="31"/>
         <image name="5StarRating" width="158" height="31"/>
-        <image name="Image" width="360" height="254"/>
         <image name="Image-10" width="16" height="16"/>
+        <image name="background" width="360" height="254"/>
         <image name="bookIcon" width="694" height="874"/>
         <image name="logo" width="61" height="55"/>
         <image name="mathFilter" width="68" height="68"/>

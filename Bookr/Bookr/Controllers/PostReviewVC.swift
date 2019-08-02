@@ -46,8 +46,7 @@ class PostReviewVC: UIViewController {
 	}
 	
 	@IBAction func starBtnAction(_ sender: StarButton) {
-//		sender.IsStarOn.toggle()
-		sender.IsStarOn = !sender.IsStarOn ? true : false
+		sender.IsStarOn.toggle()
 	}
 	
 	//MARK: - Helpers
@@ -78,7 +77,7 @@ class PostReviewVC: UIViewController {
 			}
 		}
 		#warning("Pass in userId")
-		return ReviewRequest(review: reviewTextView.text, userId: 1, ratings: rating)
+		return ReviewRequest(review: reviewTextView.text, userId: 11, ratings: rating)
 	}
 	
 	private func postReview() {
