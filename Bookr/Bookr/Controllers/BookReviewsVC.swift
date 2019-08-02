@@ -29,6 +29,20 @@ class BookReviewsVC: UIViewController {
 		loadBook()
 	}
 	
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		
+		loadBook()
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if let postReviewVC = segue.destination as? PostReviewVC {
+			guard let book = book, let url = bookReference?.url else { return }
+			postReviewVC.book = book
+			postReviewVC.bookUrl = url
+		}
+	}
+	
 	//MARK: - IBActions
 	
 	@IBAction func backBtn(_ sender: Any) {
@@ -47,7 +61,7 @@ class BookReviewsVC: UIViewController {
 				}
 			} else if let result = result {
 				self.book = result
-				self.reviews = result.reviews.sorted(by: {$0.id < $1.id})
+				self.reviews = result.reviews.sorted(by: {$1.id > $0.id})
 				DispatchQueue.main.async {
 					self.tableView.reloadData()
 				}

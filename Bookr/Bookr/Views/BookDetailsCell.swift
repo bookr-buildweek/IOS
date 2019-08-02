@@ -24,6 +24,7 @@ class BookDetailsCell: UITableViewCell {
 		guard let book = book else { return }
 		
 		titleLbl.text = book.title
+		avgRatingImgView.setStarRating(of: book.avgRating)
 		setImage(from: book.coverUrlString)
 	}
 	

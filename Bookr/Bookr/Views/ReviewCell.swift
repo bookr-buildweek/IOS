@@ -13,17 +13,20 @@ class ReviewCell: UITableViewCell {
 	@IBOutlet weak var nameLbl: UILabel!
 	@IBOutlet weak var starRatingImgView: UIImageView!
 	@IBOutlet weak var subjectLbl: UILabel!
-	@IBOutlet weak var textView: UITextView!
+	@IBOutlet weak var reviewLbl: UILabel!
 	
 	var review: Review? {
 		didSet {
-			
+			configCell()
 		}
 	}
 	
 	private func configCell() {
 		guard let review = review else { return }
 		
-		textView.text = review.review
+		#warning("Add line seperator after each review")
+		#warning("Get profile name")
+		starRatingImgView.setStarRating(of: review.ratings)
+		reviewLbl.text = review.review
 	}
 }
